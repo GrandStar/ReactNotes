@@ -16,7 +16,7 @@ JavaScript is a high-level, interpreted programming language.
 
 ## How JavaScript work
 
-![](../.gitbook/assets/image.png)
+![](../.gitbook/assets/image%20%284%29.png)
 
 ## Shallow Comparison Check
 

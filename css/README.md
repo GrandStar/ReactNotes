@@ -20,7 +20,7 @@ All HTML elements can be considered as boxes. In CSS, the term box model is used
 
 * Static
   * This is the default value, all the elements are in order as they appear in the document
-* Fixed 
+* Fixed
   * The element is positioned relative to its normal position
 * Absolute
   * The element is positioned absolutely to its first positioned parent

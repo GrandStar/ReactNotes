@@ -75,7 +75,7 @@ Cross-Origin Resource Sharing \(CORS\) is a mechanism that uses additional HTTP 
 
 ## The workflow for JSON web token
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%283%29.png)
 
 ## How do you parse JSON in backend
 
