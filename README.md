@@ -5,8 +5,7 @@ description: Study Book
 # Study Book
 
 HTML CSS JAVASCRIPT REACT REDUX NODEJS RESTFUL API 
-
-Link：[https://gzqsjtu.gitbook.io/workspace/](https://gzqsjtu.gitbook.io/workspace/)
+The conception and how to write good code.
 
 Special thanks to Tianlinlu
 
