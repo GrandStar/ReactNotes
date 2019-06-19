@@ -6,6 +6,8 @@ Redux is an open-source JavaScript library for managing application state. The b
 
 ## How does Redux work
 
+![](.gitbook/assets/image%20%281%29.png)
+
 ## Why use Redux
 
 Application state management that is easy to reason about, maintain and manage in an asynchronous web application environment. 

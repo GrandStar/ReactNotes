@@ -75,7 +75,41 @@ Cross-Origin Resource Sharing \(CORS\) is a mechanism that uses additional HTTP 
 
 ## The workflow for JSON web token
 
-![](.gitbook/assets/image%20%283%29.png)
+#### Step 1. Create the **HEADER** <a id="bb82"></a>
+
+#### Step 2. Create the PAYLOAD <a id="d7f1"></a>
+
+#### Step 3. Create the SIGNATURE <a id="d5ea"></a>
+
+```text
+// signature algorithm
+```
+
+```text
+data = base64urlEncode( header ) + “.” + base64urlEncode( payload )
+```
+
+```text
+hashedData = hash( data, secret )
+```
+
+```text
+signature = base64urlEncode( hashedData )
+```
+
+#### Step 4. Put All Three JWT Components Together <a id="309c"></a>
+
+
+
+```text
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA0NjYwYmQifQ.-xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM
+```
+
+#### Step 5. Verifying the JWT <a id="9c33"></a>
+
+JWT that is signed by the HS256 algorithm
+
+![](.gitbook/assets/image%20%286%29.png)
 
 ## How do you parse JSON in backend
 

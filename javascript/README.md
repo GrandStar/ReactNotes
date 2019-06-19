@@ -16,7 +16,7 @@ JavaScript is a high-level, interpreted programming language.
 
 ## How JavaScript work
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 ## Shallow Comparison Check
 
@@ -393,4 +393,6 @@ newObject = {...oldObject};
 On the client \(browser environment\), as long as the variables/functions are declared in the global scope, all scripts can refer to them.
 
 On the server \(Node.js\), Each file is treated as a module and it can export variables and functions by attaching them to the `module.exports` object.
+
+
 
