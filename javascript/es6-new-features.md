@@ -75,3 +75,12 @@ Easily extract array elements or object properties and store them in variables
 | :--- | :--- |
 | `[a, b] = ["Hello", "Harry"];` | `{name} = {name: "Harry", gender: "male"};` |
 
+## Declaration
+
+[`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)Declares a block-scoped, local variable, optionally initializing it to a value.
+
+[`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)Declares a block-scoped, read-only named constant.
+
+[`var`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)Declares a variable, optionally initializing it to a value.  
+
+

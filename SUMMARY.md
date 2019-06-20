@@ -11,6 +11,7 @@
   * [special function](javascript/special-function.md)
   * [function API](javascript/function-api.md)
 * [React](react/README.md)
+  * [New Features](react/new-features.md)
   * [used Hook](react/used-hook.md)
   * [Simple code](react/simple-code.md)
   * [Life Cycle](react/life-cycle.md)
