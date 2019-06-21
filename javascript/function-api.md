@@ -14,6 +14,45 @@ Matching: indexOf\(\), lastIndexOf\(\), find\(\), findIndex\(\), some\(\), every
 
 •Does not make a copy of the array before iterating.
 
+
+
+```text
+split
+var myArray = myData.split(',');
+var myNewString = myArray.join(',');
+myNewString;
+```
+
+ [`toString()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/toString)
+
+1. ```text
+   var dogNames = ["Rocket","Flash","Bella","Slugger"];
+   dogNames.toString(); //Rocket,Flash,Bella,Slugger
+   ```
+
+
+
+```text
+var myArray = ['Manchester', 'Leeds', 'Carlisle'];
+myArray.push('Cardiff');
+myArray.pop();
+pop() delete last one
+var removedItem = myArray.pop();
+```
+
+[`unshift()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)  [`shift()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) `100% like push and pop, only on the begining`
+
+```text
+myArray.unshift('Edinburgh');
+var removedItem = myArray.shift();
+```
+
+
+
+
+
+
+
 •**map** transforms the elements in the array
 
 •Based on a function you give

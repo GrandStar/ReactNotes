@@ -1,5 +1,17 @@
 # ES6 new features
 
+## ES6 New Features
+
+* Let, Const
+* Class
+* Arrow Function
+* Spread and Destructing
+* Modules
+* Promise
+* Symbol
+
+
+
 ## Class
 
 ```javascript

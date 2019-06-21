@@ -2,6 +2,8 @@
 
 ## Class Component - Containers, Smart, Stateful
 
+no state, no life cycle, commonly referred to as stateless components.
+
 ```jsx
 import React, { Component } from "react";
 import Person from "./Person/Person";

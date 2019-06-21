@@ -19,4 +19,5 @@
 * [Restful API](restful-api.md)
 * [Compare](compare.md)
 * [Test](test.md)
+* [Deploy development](deploy-development.md)
 
