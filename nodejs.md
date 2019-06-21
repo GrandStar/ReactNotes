@@ -6,11 +6,19 @@ Node.JS is an open-source, cross-platform JavaScript runtime environment that ex
 
 core is async I/O
 
+Use async I/O not multi thread
+
 like search:  db.query\('SELECT \* from some\_table', function\(res\) { res.output\(\); }\);
 
 callback as second parameter. async -&gt; event loop, solve the block
 
 everything is event loop
+
+![](.gitbook/assets/image%20%283%29.png)
+
+Usage: node \[options\] \[ -e script \| script.js \] \[arguments\] 
+
+e.g.: node debug script.js \[arguments\]
 
 ## Express
 
