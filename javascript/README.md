@@ -10,6 +10,16 @@ JavaScript is a high-level, interpreted programming language.
 
 ![](../.gitbook/assets/image%20%287%29.png)
 
+* **Heap** - Objects are allocated in a heap which is just a name to denote a large mostly unstructured region of memory
+* **Stack** - This represents the single thread provided for JavaScript code execution. Function calls form a stack of frames \(more on this below\)
+* **Browser or Web APIs** are built into your web browser, and are able to expose data from the browser and surrounding computer environment and do useful complex things with it.
+
+VIP插队： micro-task，   normal: macro-task
+
+promise iis micro
+
+![](../.gitbook/assets/image%20%2816%29.png)
+
 ## Shallow Comparison Check
 
 The shallow comparison check means that JavaScript only checks that the value's object IDs are the same, not their contents are the same. The ID here means the memory address for where JavaScript stores the information for that particular object.
