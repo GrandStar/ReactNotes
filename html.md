@@ -14,6 +14,17 @@ HyperText Markup Language \(HTML\) is the standard markup language for creating 
 * Graphic elements like &lt;svg&gt; and &lt;canvas&gt;
 * Multimedia elements like &lt;audio&gt; and &lt;video&gt;
 
+
+
+#### HTML 5 New Inline Elements <a id="mntl-sc-block_1-0-15"></a>
+
+The new inline elements define some basic concepts and keep them semantically marked up:
+
+* **&lt;mark&gt;** indicates content that is marked in some fashion.
+* **&lt;time&gt;** indicates content that is a time or date.
+* **&lt;meter&gt;** indicates content that is a fraction of a known range such as disk usage.
+* **&lt;progress&gt;** indicates the progress of a task towards completion.
+
 ## Attribute vs Property
 
 Attributes are defined on the HTML markup but properties are defined on the DOM. 

@@ -69,3 +69,31 @@ var removedItem = myArray.shift();
 
 •map and filter often are used together
 
+
+
+
+
+## typeof
+
+**typeof null = objec**
+
+| **Type** | result |
+| :--- | :--- |
+| Null | `"object"`（见下文） |
+| Boolean | `"boolean"` |
+| Number | `"number"` |
+| String | `"string"` |
+| Symbol （ECMAScript 6 新增） | `"symbol"` |
+| 宿主对象（由JS环境提供） | _Implementation-dependent_ |
+| 函数对象（\[\[Call\]\] 在ECMA-262条款中实现了） | `"function"` |
+| 任何其他对象 | `"object"` |
+
+New
+
+```text
+var str = new String('String');
+var num = new Number(100);
+typeof str; // It will return 'object'
+typeof num; // It will return 'object'
+```
+

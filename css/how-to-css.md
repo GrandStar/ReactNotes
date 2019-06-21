@@ -14,5 +14,15 @@ description: About how to
 
 ![](../.gitbook/assets/image%20%2817%29.png)
 
-Make two 
+## Make multiply divs in a line.
+
+3.  methods
+
+left
+
+flex
+
+
+
+
 
