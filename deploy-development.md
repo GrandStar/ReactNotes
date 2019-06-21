@@ -8,3 +8,17 @@ Progressive Web Apps are user experiences that have the reach of the web
 * [**Fast**](https://developers.google.com/web/progressive-web-apps/#fast) - Respond quickly to user interactions with silky smooth animations and no janky scrolling.
 * [**Engaging**](https://developers.google.com/web/progressive-web-apps/#engaging) - Feel like a natural app on the device, with an immersive user experience.
 
+
+
+## real-time applications
+
+A real-time application \(RTA\) is an [application program](https://searchsoftwarequality.techtarget.com/definition/application) that functions within a time frame that the user senses as immediate or current. The [latency](https://whatis.techtarget.com/definition/latency) must be less than a defined value, usually measured in seconds. Whether or not a given application qualifies as an RTA depends on the worst-case execution time \(WCET\), the maximum length of time a defined task or set of tasks requires on a given [hardware](https://searchnetworking.techtarget.com/definition/hardware) platform. The use of RTAs is called real-time computing \(RTC\).
+
+* Videoconference applications
+* [VoIP](https://searchunifiedcommunications.techtarget.com/definition/VoIP) \(voice over Internet Protocol\)
+* Online [gaming](https://whatis.techtarget.com/definition/gaming)
+* Community storage solutions
+* Some e-commerce transactions
+* Chatting
+* IM \(instant messaging\)
+
