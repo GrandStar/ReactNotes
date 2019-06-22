@@ -1,12 +1,18 @@
 # coding question
 
-delete node in linkedlist
+delete node in inkedlist
 
-top two frequest in array
+top two frequents in array
 
 flattern object/array
 
-closure
+closure:
+
+  Fibonacci closure:
+
+  use closure to change loop / use a closure to create a private counter?
+
+ closure in callback
 
 
 

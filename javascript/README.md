@@ -404,3 +404,9 @@ On the server \(Node.js\), Each file is treated as a module and it can export va
 
 
 
+## Pure function
+
+ a **function** where the return value is only determined by its input values, without observable side effects. 
+
+
+

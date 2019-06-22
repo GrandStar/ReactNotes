@@ -26,6 +26,69 @@ Usage: node \[options\] \[ -e script \| script.js \] \[arguments\]
 
 e.g.: node debug script.js \[arguments\]
 
+## Event Loop
+
+allows Node.js to perform non-blocking I/O operations
+
+the kernel tells Node.js so that the appropriate callback may be added to the **poll** queue to eventually be executed. We'll explain this in further detail later in this topic.
+
+
+
+```text
+   ┌───────────────────────────┐
+┌─>│           timers          │
+│  └─────────────┬─────────────┘
+│  ┌─────────────┴─────────────┐
+│  │     pending callbacks     │
+│  └─────────────┬─────────────┘
+│  ┌─────────────┴─────────────┐
+│  │       idle, prepare       │
+│  └─────────────┬─────────────┘      ┌───────────────┐
+│  ┌─────────────┴─────────────┐      │   incoming:   │
+│  │           poll            │<─────┤  connections, │
+│  └─────────────┬─────────────┘      │   data, etc.  │
+│  ┌─────────────┴─────────────┐      └───────────────┘
+│  │           check           │
+│  └─────────────┬─────────────┘
+│  ┌─────────────┴─────────────┐
+└──┤      close callbacks      │
+   └───────────────────────────┘
+```
+
+### **poll: poll new I/O, back to timer,** 
+
+if \(poll queue is empty\), { 
+
+    if \(has setImmediate\), {poll will stop and go to check run this setImmediate.}  
+
+     else: run callback, set timer
+
+} else {
+
+  traverse queue, until is empty
+
+}
+
+### **check: run setImmediate\(\) callback, setImmediate\(\) will add to check**
+
+### **clase callback: run socket close callback**
+
+### **timers: run timer\(setTimeout, setInterval\)**
+
+### I/O callback: run some remaining I/O callback
+
+### idle, prepare: node internal
+
+
+
+Micro Task vs Macro Task:
+
+macro-task: setTimeout、setInterval、 setImmediate、script、 I/O
+
+micro-task : process.nextTick、new Promise\(\).then
+
+
+
 ## REPL model
 
 REPL stands for \(READ, EVAL, PRINT, LOOP\). NodeJS comes with bundled REPL environment. This allows for the easy creation of CLI \(Command Line Interface\) applications. 
