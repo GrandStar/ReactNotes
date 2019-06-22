@@ -29,10 +29,12 @@ description: Compare the most interested concept
 
 | SQL | No-SQL |
 | :--- | :--- |
-| table based | document based |
+| table based | key-value pairs, document-based, graph databases or wide-column stores |
 | predefined schema | dynamic schema |
 | use sql  | use unql |
 | good fit for complex query | don't have standard interfaces |
+| vertically scalable -----   increase the load on a single server | horizontally scalable  -------   adding more servers |
+| ACID properties \(Atomicity, Consistency, Isolation and Durability\) | Brewers CAP theorem \(Consistency, Availability and Partition tolerance\). |
 
 ## Element vs Component
 
