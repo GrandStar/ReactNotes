@@ -1,3 +1,9 @@
+---
+description: >-
+  REPL Node.js --Global Objects / util  - Global Objects / util----File System /
+  HTTP-----express，mocha，npm
+---
+
 # NodeJS
 
 ## Node.JS
@@ -19,6 +25,24 @@ everything is event loop
 Usage: node \[options\] \[ -e script \| script.js \] \[arguments\] 
 
 e.g.: node debug script.js \[arguments\]
+
+## REPL model
+
+REPL stands for \(READ, EVAL, PRINT, LOOP\). NodeJS comes with bundled REPL environment. This allows for the easy creation of CLI \(Command Line Interface\) applications. 
+
+```text
+const repl = require('repl');
+```
+
+The `repl` module exports the [`repl.REPLServer`](https://nodejs.org/api/repl.html#repl_class_replserver) class. While running, instances of [`repl.REPLServer`](https://nodejs.org/api/repl.html#repl_class_replserver) will accept individual lines of user input, evaluate those according to a user-defined evaluation function, then output the result. 
+
+* `.break` - When in the process of inputting a multi-line expression, entering the `.break` command \(or pressing the `<ctrl>-C` key combination\) will abort further input or processing of that expression.
+* `.clear` - Resets the REPL `context` to an empty object and clears any multi-line expression currently being input.
+* `.exit` - Close the I/O stream, causing the REPL to exit.
+* `.help` - Show this list of special commands.
+* `.save` - Save the current REPL session to a file: `> .save ./file/to/save.js`
+* `.load` - Load a file into the current REPL session. `> .load ./file/to/load.js`
+* `.editor` - Enter editor mode \(`<ctrl>-D` to finish, `<ctrl>-C` to cancel\).
 
 ## Express
 
@@ -49,6 +73,14 @@ Using Passport.js. Passport is authentication middleware for NodeJS. Passport ca
 * SuperAgent
 * Got
 
+```text
+http.get(options, (res) => {
+  // Do stuff
+}).on('socket', (socket) => {
+  socket.emit('agentRemove');
+});
+```
+
 ## How does NodeJS handle child threads
 
 NodeJS is a single thread process. It does not expose child threads and thread management methods to the developer. Technically, NodeJS does spawn child threads for certain tasks such as asynchronous I/O, but these run behind the scenes and do not execute any application JavaScript code, nor block the main event loop. If threading support is desired in a NodeJS application, there are tools available to enable it, such as the `ChildProcess` module. 
@@ -68,27 +100,27 @@ To include the File System module, use the `require()` method.
 * Rename files - `fs.rename()`
 * Upload files
 
-## REPL
 
-REPL stands for \(READ, EVAL, PRINT, LOOP\). NodeJS comes with bundled REPL environment. This allows for the easy creation of CLI \(Command Line Interface\) applications. 
+
+## Util
+
+The `util` module is primarily designed to support the needs of Node.js' own internal APIs. However, many of the utilities are useful for application and module developers as well. It can be accessed using:
 
 ```text
-const repl = require('repl');
+const util = require('util');
 ```
 
-The `repl` module exports the [`repl.REPLServer`](https://nodejs.org/api/repl.html#repl_class_replserver) class. While running, instances of [`repl.REPLServer`](https://nodejs.org/api/repl.html#repl_class_replserver) will accept individual lines of user input, evaluate those according to a user-defined evaluation function, then output the result. 
+```text
+const util = require('util');
 
-* `.break` - When in the process of inputting a multi-line expression, entering the `.break` command \(or pressing the `<ctrl>-C` key combination\) will abort further input or processing of that expression.
-* `.clear` - Resets the REPL `context` to an empty object and clears any multi-line expression currently being input.
-* `.exit` - Close the I/O stream, causing the REPL to exit.
-* `.help` - Show this list of special commands.
-* `.save` - Save the current REPL session to a file: `> .save ./file/to/save.js`
-* `.load` - Load a file into the current REPL session. `> .load ./file/to/load.js`
-* `.editor` - Enter editor mode \(`<ctrl>-D` to finish, `<ctrl>-C` to cancel\).
+async function fn() {
+  return 'hello world';
+}
+const callbackFunction = util.callbackify(fn);
 
-
-
-
-
-
+callbackFunction((err, ret) => {
+  if (err) throw err;
+  console.log(ret);
+});
+```
 
