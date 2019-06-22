@@ -20,7 +20,7 @@ callback as second parameter. async -&gt; event loop, solve the block
 
 everything is event loop
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%284%29.png)
 
 Usage: node \[options\] \[ -e script \| script.js \] \[arguments\] 
 
@@ -89,6 +89,32 @@ micro-task : process.nextTick、new Promise\(\).then
 
 
 
+```text
+setTimeout(()=>{
+    console.log('timer1')
+    Promise.resolve().then(function() {
+        console.log('promise1')
+    })
+}, 0)
+setTimeout(()=>{
+    console.log('timer2')
+    Promise.resolve().then(function() {
+        console.log('promise2')
+    })
+}, 0)
+复制代码
+```
+
+Browser：`timer1=>promise1=>timer2=>promise2`
+
+![](../.gitbook/assets/image%20%285%29.png)
+
+![](../.gitbook/assets/image%20%283%29.png)
+
+node newest: timer1=&gt;promise1=&gt;timer2=&gt;promise2
+
+before node10  timer1=&gt;promise1=&gt;timer2=&gt;promise2
+
 ## REPL model
 
 REPL stands for \(READ, EVAL, PRINT, LOOP\). NodeJS comes with bundled REPL environment. This allows for the easy creation of CLI \(Command Line Interface\) applications. 
@@ -106,6 +132,8 @@ The `repl` module exports the [`repl.REPLServer`](https://nodejs.org/api/repl.ht
 * `.save` - Save the current REPL session to a file: `> .save ./file/to/save.js`
 * `.load` - Load a file into the current REPL session. `> .load ./file/to/load.js`
 * `.editor` - Enter editor mode \(`<ctrl>-D` to finish, `<ctrl>-C` to cancel\).
+
+
 
 ## Express
 

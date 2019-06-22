@@ -76,7 +76,11 @@ Leetcode
 
 349 [ ****Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)    
 
+387  First Unique Character in a String
+
 394 [ Decode String](https://leetcode.com/problems/decode-string)   
+
+
 
 
 
