@@ -1,5 +1,7 @@
 # coding question
 
+
+
 delete node in inkedlist
 
 top two frequents in array
@@ -76,11 +78,17 @@ Leetcode
 
 349 [ ****Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)    
 
-387  First Unique Character in a String
+387 String  First Unique Character in a String
+
+      2 pass;
 
 394 [ Decode String](https://leetcode.com/problems/decode-string)   
 
 
 
+Use array for any question.
 
+string =  array.join\(""\);
+
+no need queue, stack
 
