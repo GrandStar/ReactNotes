@@ -20,6 +20,8 @@ Leetcode
 
 20  [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)    
 
+27 [Remove Element](https://leetcode.com/problems/remove-element)    
+
 33[  Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)    
 
 36  Valid Sudoku
@@ -32,11 +34,15 @@ Leetcode
 
 73 [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) 
 
+80 [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)   
+
 88 [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)    
 
 94 [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)   
 
 102 [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)    
+
+121 [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)    
 
 144 ****[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)    
 
@@ -44,7 +50,11 @@ Leetcode
 
 155 ****[Min Stack](https://leetcode.com/problems/min-stack)   
 
+192 [Word Frequency](https://leetcode.com/problems/word-frequency)    
+
 203 [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements) 
+
+204[ Count Primes](https://leetcode.com/problems/count-primes)
 
 206 [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)  
 
