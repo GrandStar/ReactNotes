@@ -6,13 +6,19 @@ description: 'Array, String, Object'
 
 ## Array 
 
-InPlace:push\(\)/pop\(\), shift\(\)/unshift\(\), splice\(\), copyWithin\(\), fill\(\), reverse\(\), sort\(\)  
+InPlace:push\(\)/pop\(\), shift\(\)/unshift\(\), **splice\(\),** copyWithin\(\), fill\(\), reverse\(\), sort\(\)  
 
 
 ReturnNew: concat\(\), slice\(\)  
+`***`**splice\(\),     splice\(startIndex, deleteNumber, input new to here\);**
 
+```text
+array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+```
 
 Matching: indexOf\(\), lastIndexOf\(\), find\(\), findIndex\(\), some\(\), every\(\), join\(\)
+
+
 
 **traverse forEach** executes the provided callback once for each element present in the array in ascending order.
 
@@ -141,7 +147,66 @@ arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue]
 
 ## String
 
+Strings can also be created using the `String` global object directly:
 
+```text
+String(thing)
+new String(thing)
+```
+
+#### [Character acces](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Character_access)s <a id="Character_access"></a>
+
+ string.[`charAt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt)
+
+```text
+return 'cat'[1];
+```
+
+### [`String` instance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#String_instances) <a id="String_instances"></a>
+
+`String.prototype.constructor`Specifies the function that creates an object's prototype.[`String.prototype.length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)Reflects the length of the string.
+
+### [`String.prototype.concat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)Combines the text of two strings and returns a new string.
+
+### [`String.prototype.includes()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)Determines whether one string may be found within another string.
+
+[`String.prototype.indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)Returns the index within the calling [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) object of the first occurrence of the specified value, or -1 if not found.
+
+[`String.prototype.lastIndexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf)Returns the index within the calling [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) object of the last occurrence of the specified value, or -1 if not found.
+
+[`String.prototype.match()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)Used to match a regular expression against a string.[`String.prototype.matchAll()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll)Returns an iterator of all matches.[`String.prototype.normalize()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize)Returns the Unicode Normalization Form of the calling string value.
+
+[`String.prototype.repeat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)Returns a string consisting of the elements of the object repeated the given times.
+
+[`String.prototype.replace()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
+
+[`String.prototype.search()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)Executes the search for a match between a regular expression and a specified string.
+
+### [`String.prototype.slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)Extracts a section of a string and returns a new string.
+
+```text
+str.slice(beginIndex[, endIndex])
+```
+
+### [`String.prototype.split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)Splits a [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) object into an array of strings by separating the string into substrings.
+
+```text
+str.split([separator[, limit]])
+```
+
+### [`String.prototype.substring()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring)Returns the characters in a string between two indexes into the string.
+
+[`String.prototype.toLowerCase()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)Returns the calling string value converted to lower case.
+
+[`String.prototype.toUpperCase()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)Returns the calling string value converted to uppercase.
+
+###  [`String.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toString)Returns a string representing the specified object. Overrides the [`Object.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) method.
+
+
+
+### Methods[Section](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods) <a id="Methods"></a>
+
+[`String.fromCharCode()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)Returns a string created by using the specified sequence of Unicode values.[`String.fromCodePoint()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint)Returns a string created by using the specified sequence of code points.[`String.raw()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw) Returns a string created from a raw template string.
 
 ## typeof
 
