@@ -279,7 +279,7 @@ only changes in `props` and/or `state` trigger React to re-render the components
 
 ## Pure Component
 
-A pure \(functional\) component in React is stateless \(like a dumb component\) and always renders the same given the same set of input props. 
+shouldComponentUpdate
 
 ## Pure Functional Component 
 
