@@ -8,7 +8,7 @@ JavaScript is a high-level, interpreted programming language.
 
 ## How JavaScript work
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 * **Heap** - Objects are allocated in a heap which is just a name to denote a large mostly unstructured region of memory
 * **Stack** - This represents the single thread provided for JavaScript code execution. Function calls form a stack of frames \(more on this below\)
@@ -18,7 +18,7 @@ VIP插队： micro-task，   normal: macro-task
 
 promise iis micro
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2830%29.png)
 
 ## Shallow Comparison Check
 
@@ -408,5 +408,29 @@ On the server \(Node.js\), Each file is treated as a module and it can export va
 
  a **function** where the return value is only determined by its input values, without observable side effects. 
 
+## RegEx
 
+```text
+/*
+   /pattern/flags
+*/
+
+const regex = /ab+c/;
+
+const regex = /^[a-zA-Z]+[0-9]*\W?_$/gi;
+
+let regex = new RegExp(/^[a-zA-Z]+[0-9]*\W?_$/, "gi");
+
+let regex = new RegExp("^[a-zA-Z]+[0-9]*\\W?_$", "gi");
+```
+
+**`replace()`**
+
+String.replace\(\)
+
+var p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+
+var regex = /dog/gi;
+
+console.log\(p.replace\(regex, 'ferret'\)\);
 

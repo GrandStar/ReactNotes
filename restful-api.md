@@ -9,6 +9,26 @@
 
 ## The difference between PUT, POST and PATCH method
 
+[https://stackoverflow.com/questions/630453/put-vs-post-in-rest/630475](https://stackoverflow.com/questions/630453/put-vs-post-in-rest/630475)
+
+In **POST** method you can send body params in `form-data`
+
+In **PUT** method you have to send body params in `x-www-form-urlencoded`
+
+* **POST** to a URL **creates a child resource** at a _server defined_ URL.
+* **PUT** to a URL **creates/replaces the resource** in its entirety at the _client defined_ URL.
+* **PATCH** to a URL **updates** _**part**_ **of the resource** at that client defined URL.
+
+![](.gitbook/assets/image%20%284%29.png)
+
+**POST creates a child resource**, so POST to `/items` creates a resources that lives under the `/items` resource. Eg. `/items/1`. Sending the same post packet twice will create two resources.
+
+**PUT** is for creating or replacing a resource at a **URL known by the client**.
+
+Therefore: **PUT** is only a candidate for CREATE where the client already knows the url before the resource is created. Eg. `/blogs/nigel/entry/when_to_use_post_vs_put` as the title is used as the resource key
+
+**PUT** replaces the resource at the known url if it already exists, so sending the same request twice has no effect. In other words, **calls to PUT are idempotent**.
+
 ## HTTP Status Code
 
 * 1xx: Informational
@@ -109,7 +129,7 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZ
 
 JWT that is signed by the HS256 algorithm
 
-![](.gitbook/assets/image%20%2812%29.png)
+![](.gitbook/assets/image%20%2813%29.png)
 
 ## How do you parse JSON in backend
 

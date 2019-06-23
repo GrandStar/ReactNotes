@@ -33,7 +33,7 @@ Error Handling
 * **componentDidMount** This is the hook method which is invoked immediately after the component **did** mount on the browser DOM.  **Usage:** All the interaction directly with the browser DOM and integrate with third-party libraries like Highcharts or D3 should be done here. E.g This method is best to draw sound wave graphs of songs.
 * _The API calls should be made in componentDidMount method always._
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../.gitbook/assets/image%20%2831%29.png)
 
 **Mounting**
 
@@ -58,7 +58,7 @@ The list of methods that will get called in sequence when the update happens in 
 * **render** And then the component gets rendered \(details in mounting phase\).
 * **getSnapshotBeforeUpdate**
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
   
 ****This method gets called after the render created the React element and before it is actually updated from virtual DOM to actual DOM. This phase is known as `pre-commit` phase.
@@ -74,5 +74,5 @@ The list of methods that will get called in sequence when the update happens in 
 
 ## Old Life Cycle
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 

@@ -72,6 +72,8 @@ Leetcode
     let minPrice = +Infinity;
 ```
 
+**\*\*\*\*\* 125 Valid Palindrom** 
+
 **144** [**Binary Tree Preorder Traversal**](https://leetcode.com/problems/binary-tree-preorder-traversal)    ****
 
 **151** [**Reverse Words in a String**](https://leetcode.com/problems/reverse-words-in-a-string)   ****
