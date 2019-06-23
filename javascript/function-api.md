@@ -10,11 +10,15 @@ ReturnNew: concat\(\), slice\(\)
 
 Matching: indexOf\(\), lastIndexOf\(\), find\(\), findIndex\(\), some\(\), every\(\), join\(\)
 
-**forEach** executes the provided callback once for each element present in the array in ascending order.
+**traverse forEach** executes the provided callback once for each element present in the array in ascending order.
+
+```text
+fruits.forEach(function (item, index, array) {
+    console.log(item, index);
+});
+```
 
 •Does not make a copy of the array before iterating.
-
-
 
 ```text
 split
@@ -23,7 +27,13 @@ var myNewString = myArray.join(',');
 myNewString;
 ```
 
- [`toString()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/toString)
+ push\(\): add to last.
+
+pop\(\): delete last and return this one.
+
+
+
+[`toString()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/toString)
 
 1. ```text
    var dogNames = ["Rocket","Flash","Bella","Slugger"];
@@ -42,6 +52,8 @@ var removedItem = myArray.pop();
 
 [`unshift()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)  [`shift()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) `100% like push and pop, only on the begining`
 
+`unshift(): add to head.`
+
 ```text
 myArray.unshift('Edinburgh');
 var removedItem = myArray.shift();
@@ -49,7 +61,51 @@ var removedItem = myArray.shift();
 
 
 
+```text
+.indexOf(element) return the index
+```
 
+Splice: delete some elements:
+
+```text
+array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+start position, delete number, items to add.from start
+return the [] that deleted.
+```
+
+```text
+var removedItem = fruits.splice(pos, 1); 
+```
+
+.fill\(\) fill all indexes.
+
+[`.concat()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/concat) ``
+
+[`Array.prototype.includes()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+
+[`Array.prototype.join()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/join)   `concat and return a new String`
+
+[`Array.prototype.slice()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)  `get some return a new array`
+
+[`Array.prototype.toString()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/toString)
+
+[`Array.prototype.lastIndexOf()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf) `return the last index..`
+
+
+
+Traverse:
+
+[`Array.prototype.forEach()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+[`Array.prototype.map()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+[`Array.prototype.reduce()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
+[`Array.prototype.some()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some)  `as least one or return false;`
+
+
+
+## Object
 
 
 

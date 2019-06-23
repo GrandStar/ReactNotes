@@ -36,11 +36,17 @@ Leetcode
 
 **27** [**Remove Element**](https://leetcode.com/problems/remove-element)    ****
 
-**33**[  **Search in Rotated Sorted Array**](https://leetcode.com/problems/search-in-rotated-sorted-array)    ****
+    **nums.splice\(i, 1\), i--;**
+
+**33**[  **Search in Rotated Sorted Array**](https://leetcode.com/problems/search-in-rotated-sorted-array)   ****
+
+    **toxic** 
 
 **36  Valid Sudoku**
 
-**39**  [**Combination Sum**](https://leetcode.com/problems/combination-sum)    ****
+**39**  [**Combination Sum**](https://leetcode.com/problems/combination-sum) ****
+
+       **iterative, help\(index + 1, array, target - candidates\[index\]\);**
 
 **46** [**Permutations**](https://leetcode.com/problems/permutations)    ****
 
@@ -49,6 +55,8 @@ Leetcode
 **73** [**Set Matrix Zeroes**](https://leetcode.com/problems/set-matrix-zeroes) ****
 
 **80** [**Remove Duplicates from Sorted Array II**](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)   ****
+
+   **splice\(\), O\(n\)**
 
 **88** [**Merge Sorted Array**](https://leetcode.com/problems/merge-sorted-array)    ****
 
