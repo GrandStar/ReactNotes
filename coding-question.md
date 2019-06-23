@@ -22,7 +22,9 @@ Leetcode
 
 **1  2sum**
 
-**3** [  **Longest Substring Without Repeating Characters**](https://leetcode.com/problems/longest-substring-without-repeating-characters) ****
+**3 string/array  use map**[  **Longest Substring Without Repeating Characters**](https://leetcode.com/problems/longest-substring-without-repeating-characters) ****
+
+   **use a duplicateIndex = \[\];** 
 
 **15 3sum** [**3Sum Closes**](https://leetcode.com/problems/3sum-closest)**t**  [**3Sum With Multiplicity**](https://leetcode.com/problems/3sum-with-multiplicity)    ****
 

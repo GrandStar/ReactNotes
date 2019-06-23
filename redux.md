@@ -8,6 +8,8 @@ Redux is an open-source JavaScript library for managing application state. The b
 
 ![](.gitbook/assets/image%20%281%29.png)
 
+![](.gitbook/assets/image%20%2830%29.png)
+
 ## Why use Redux
 
 Application state management that is easy to reason about, maintain and manage in an asynchronous web application environment. 
@@ -16,7 +18,7 @@ Application state management that is easy to reason about, maintain and manage i
 
 * Single source of truth - the state of your whole application is stored in an object tree within a single store.
 * State is read-only - the only way to change the state is to emit an action, an object describing what happened.
-* changes are made with pure functions - to specify how the state tree is transformed by actions, you write pure reducers. 
+* changes are made with **pure functions** - to specify how the state tree is transformed by actions, you write pure reducers. 
 
 ## Why Redux is immutable
 
@@ -25,6 +27,10 @@ State is read-only. The only way to change the state is to emit an action, an ob
 ## Why state is immutable in Redux
 
 Redux's use of shallow equality checking requires immutability if any connected components are to be update correctly. Immutability can bring increased performance to your app, and leads to simpler programming and debugging, as data that never changes is easier to reason about than data that is free to be changed arbitrarily throughout your app. In particular, immutability in the context of a Web app enables sophisticated change detection techniques to be implemented simply and cheaply, ensuring the computationally expensive progress of updating the DOM occurs only when it absolutely has to. 
+
+#### Avoiding Array Mutations <a id="avoiding-array-mutations"></a>
+
+#### Avoiding Object Mutations <a id="avoiding-object-mutations"></a>
 
 ## Redux vs Context API
 
@@ -48,6 +54,23 @@ Actions are plain JavaScript objects. They must have a type indicating the type 
 
 A reducer is simply a pure function that takes the previous state and an action, and returns the next state. 
 
+```text
+const counter = (state = 0, action) => {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1;
+    case 'DECREMENT':
+      return state - 1;
+    default:
+      return state;
+  }
+};
+
+const increaseAction = {type: 'INCREMENT'};
+const decreaseAction = {type: 'DECREMENT'};
+const otherAction = {type: 'OTHER'};
+```
+
 ## Store
 
 The store is a JavaScript object that holds application state. Along with this it also has the following responsibilities:
@@ -58,6 +81,29 @@ The store is a JavaScript object that holds application state. Along with this i
 * Handles unregistering of listeners via the function returned by subscribe\(listener\)
 
 The only way to change the state inside it is to dispatch an action on it. 
+
+```text
+import {createStore} from 'redux';
+
+const counter = (state = 0, action) => {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1;
+    case 'DECREMENT':
+      return state - 1;
+    default:
+      return state;
+  }
+};
+
+const store = createStore(counter);
+```
+
+`store` has three important methods:
+
+1. **`getState()`** retrieves the current state of the Redux store. If we ran `console.log(store.getState())` with the code above, we could get `0` since it is the initial state of our application.
+2. **`dispatch()`** is the most commonly used. It is how we dispatch actions to change the state of the application. If we run `store.dispatch( { type: 'INCREMENT' });` followed by `console.log(store.getState());` we will get `1`.
+3. **`subscribe()`** registers a callback that the redux store will call any time an action has been dispatched so you can update the UI of your application to reflect the current application state. If you have the function `print()` and you write `store.subscribe(print)`, the `print()` function will be called every time if an action has been dispatched.
 
 ## Redux Thunk
 
