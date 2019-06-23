@@ -90,7 +90,22 @@ Leetcode
 
 **268** [**Missing Number**](https://leetcode.com/problems/missing-number)  ****
 
+       **use sum, reduce get array sum, diff.**
+
 **283** [**Move Zeroes**](https://leetcode.com/problems/move-zeroes)    ****
+
+**from back to front.**
+
+```text
+var moveZeroes = function(nums) {       
+    for(var i = nums.length;i--;){
+        if(nums[i]===0){
+            nums.splice(i,1)
+            nums.push(0);
+        }
+    }
+};
+```
 
 **300**  [**Longest Increasing Subsequence**](https://leetcode.com/problems/longest-increasing-subsequence)\*\*\*\*
 
