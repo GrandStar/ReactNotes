@@ -28,7 +28,11 @@ Leetcode
 
 **15 3sum** [**3Sum Closes**](https://leetcode.com/problems/3sum-closest)**t**  [**3Sum With Multiplicity**](https://leetcode.com/problems/3sum-with-multiplicity)    ****
 
+    **for loop,  left = i+ 1; right = length -1; while\(left &lt; right\)....if else**
+
 **20**  [**Valid Parentheses**](https://leetcode.com/problems/valid-parentheses)    ****
+
+      **push \), \], } into array, use pop\(\);**
 
 **27** [**Remove Element**](https://leetcode.com/problems/remove-element)    ****
 
