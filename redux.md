@@ -8,7 +8,7 @@ Redux is an open-source JavaScript library for managing application state. The b
 
 ![](.gitbook/assets/image%20%281%29.png)
 
-![](.gitbook/assets/image%20%2830%29.png)
+![](.gitbook/assets/image%20%2834%29.png)
 
 ## Why use Redux
 
@@ -107,7 +107,36 @@ const store = createStore(counter);
 
 ## Redux Thunk
 
-Redux thunk is a middleware that allows you to write action creators that return a function instead of an action. The thunk can then be used to delay the dispatch of an action if a certain condition is met. This allows you to handle the asynchronous dispatching of actions. This also allows you to dispatch multiple actions. 
+Redux thunk is a middleware that allows you to **write action creators that return a function instead of an action**. The thunk can then be used to delay the dispatch of an action if a certain condition is met. This allows you to handle the asynchronous dispatching of actions. This also allows you to dispatch multiple actions. 
+
+![](.gitbook/assets/image%20%285%29.png)
+
+only store.dispatch\(\) function
+
+in redux thunk
+
+```text
+let next = store.dispatch;
+store.dispatch = function dispatchAndLog(action) {
+  console.log('dispatching', action);
+  next(action);
+  console.log('next state', store.getState());
+}
+```
+
+{% embed url="https://store.dispatch" %}
+
+![](.gitbook/assets/image%20%2817%29.png)
+
+```text
+const store = createStore(
+  reducer,
+  applyMiddleware(thunk, promise, logger)
+);
+
+applyMiddlewares
+// make all middleware as an array and run.
+```
 
 ## createStore
 

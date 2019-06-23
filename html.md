@@ -83,5 +83,23 @@ The aside element represents a portion of the document whose content is only ind
 
 Cross-Origin Resource Sharing \([CORS](https://developer.mozilla.org/en-US/docs/Glossary/CORS)\) is a mechanism that uses additional [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP)headers to tell a browser to let a web application running at one origin \(domain\) have permission to access selected resources from a server at a different origin. A web application executes a **cross-origin HTTP request** when it requests a resource that has a different origin \(domain, protocol, and port\) than its own origin.
 
-## 
+## URL structure
+
+{% embed url="http://www.example.com:80/path/to/myfile.html?key1=value1&key2=value2\#SomewhereInTheDocument" %}
+
+`http` is the protocol.
+
+`www.example.com` is the domain name. 
+
+`:80` is the port. 
+
+`/path/to/myfile.html` is the path to the resource on the Web server.
+
+`?key1=value1&key2=value2` are extra parameters provided to the Web server. 
+
+`#SomewhereInTheDocument` is an anchor to another part of the resource itself. 
+
+| **Scheme:** | **//** | **Login:password@** | **Address** | **:port** | **/path/to/resource** | **?query\_string** | **\#fragment** |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
 
