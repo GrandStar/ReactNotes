@@ -19,7 +19,7 @@ app.listen\(1337, \(\) =&gt; console.log\('Web Server running on port 1337'\),\)
 
 
 
-## Express
+## Initial
 
 create new 
 
@@ -37,6 +37,25 @@ app.listen(3000);
 
 
 ## Router :
+
+
+
+We can use app.route\(\)
+
+```text
+app.route('/book')
+  .get(function(req, res) {
+    res.send('Get a random book');
+  })
+  .post(function(req, res) {
+    res.send('Add a book');
+  })
+  .put(function(req, res) {
+    res.send('Update the book');
+  });
+```
+
+
 
 Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI \(or path\) and a specific HTTP request method \(GET, POST, and so on\).
 
@@ -111,7 +130,48 @@ router.get('/about', function(req, res) {
 module.exports = router;
 ```
 
+## Advanced Routing <a id="express-advanced-routing"></a>
 
+regular expression
+
+* `[abc]` Matches either an a, b or c character
+* `[a-z]` Matches any characters between a and z, including a and z.
+* `.` Matches any character other than newline
+* `\d` Matches any decimal digit. Equivalent to \[0-9\].
+* `a?` Matches an `a` character or nothing.
+* `a+` Matches one or more consecutive `a` characters.
+* `a*` Matches zero or more consecutive `a` characters.
+
+```text
+app.get('/ab?cd', function(req, res) {
+  res.send('ab?cd');
+});
+```
+
+#### Routing Parameter <a id="routing-parameter"></a>
+
+```text
+Route path: /users/:userId/books/:bookId
+Request URL: http://localhost:3000/users/34/books/8989
+req.params: { "userId": "34", "bookId": "8989" }
+
+app.get('/users/:userId/books/:bookId', function(req, res) {
+  res.send(req.params);
+});
+```
+
+#### Request Body <a id="request-body"></a>
+
+```text
+const app = require('express')();
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json()); // for parsing application/json
+
+app.post('/users', function(req, res) {
+  res.send(req.body);
+});
+```
 
 ## app.use\(\[path\], function\)\]
 
@@ -162,7 +222,26 @@ app.use(function(err, req, res, next) {
 
 ## Express Middleware
 
+1. app.use `app.METHOD()` 
+2. router.use `router.METHOD()` 
+3.  err app.use\(function\(err, req,res,next\)\)
+4. import, third party middleware 
+
+```text
+router.use('url',function(req,res,next){next()})
+```
+
+```text
+app.use('url', function(req,res,next){next()})
+```
+
 Middleware functions are functions that have access to the request object \(req\), the response object \(res\), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
+
+* [应用层中间件](https://expressjs.com/zh-cn/guide/using-middleware.html#middleware.application)
+* [路由器层中间件](https://expressjs.com/zh-cn/guide/using-middleware.html#middleware.router)
+* [错误处理中间件](https://expressjs.com/zh-cn/guide/using-middleware.html#middleware.error-handling)
+* [内置中间件](https://expressjs.com/zh-cn/guide/using-middleware.html#middleware.built-in)
+* [第三方中间件](https://expressjs.com/zh-cn/guide/using-middleware.html#middleware.third-party)
 
 Middleware functions can perform the following tasks:
 
@@ -201,5 +280,15 @@ app.use(function(err, req, res, next) {
   console.error(err.stack);
   res.status(500).send('Something broke!');
 });
+```
+
+### third part :
+
+```text
+npm install cookie-parser
+
+var cookieParser = require('cookie-parser');
+// load the cookie-parsing middleware
+app.use(cookieParser());
 ```
 
