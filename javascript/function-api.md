@@ -69,7 +69,13 @@ var removedItem = myArray.shift();
 
 •map and filter often are used together
 
+### Reduce\(\)
 
+array.reduce\(\(accumulator, currentValue, currentIndex, sourceArray\) =&gt; {  }\)
+
+```
+arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])
+```
 
 
 

@@ -40,17 +40,5 @@ test('two plus two is four', () => {
 
 ![](.gitbook/assets/image%20%2830%29.png)
 
-## Working Flow
-
-Github own branch
-
-Use jest to test, and then push to my branch.
-
-Other for CI/CD, use jenkins and pull my code, and build and deploy and test in Jenkins.
-
-If there is problem, report to jira. And report this bug, then release new code and fix bug.
-
-Github: version control.  Jenkins: CI/CD.  Jira: show the whole process and report bug.
-
- 
+## 
 
