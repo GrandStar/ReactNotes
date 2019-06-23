@@ -6,7 +6,7 @@ we hava a xxx.js
 
 create a xxx.test.js
 
-![](.gitbook/assets/image%20%2820%29.png)
+![](.gitbook/assets/image%20%2821%29.png)
 
 ![](.gitbook/assets/image%20%282%29.png)
 
@@ -36,9 +36,9 @@ test('two plus two is four', () => {
 
 
 
-![](.gitbook/assets/image%20%2834%29.png)
+![](.gitbook/assets/image%20%2835%29.png)
 
-![](.gitbook/assets/image%20%2836%29.png)
+![](.gitbook/assets/image%20%2837%29.png)
 
 ## 
 

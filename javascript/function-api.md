@@ -1,3 +1,7 @@
+---
+description: 'Array, String, Object'
+---
+
 # function API
 
 ## Array 
@@ -132,6 +136,10 @@ array.reduce\(\(accumulator, currentValue, currentIndex, sourceArray\) =&gt; {  
 ```
 arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])
 ```
+
+
+
+## String
 
 
 

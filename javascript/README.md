@@ -18,7 +18,7 @@ VIP插队： micro-task，   normal: macro-task
 
 promise iis micro
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../.gitbook/assets/image%20%2831%29.png)
 
 ## Shallow Comparison Check
 
@@ -433,4 +433,62 @@ var p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it
 var regex = /dog/gi;
 
 console.log\(p.replace\(regex, 'ferret'\)\);
+
+
+
+
+
+## inherited:
+
+
+
+```text
+function PrimaryStudent(props) {
+    Student.call(this, props);
+    this.grade = props.grade || 1;
+}
+function F() {
+}
+F.prototype = Student.prototype;
+PrimaryStudent.prototype = new F();
+PrimaryStudent.prototype.constructor = PrimaryStudent;
+PrimaryStudent.prototype.getGrade = function () {
+    return this.grade;
+};
+```
+
+![](../.gitbook/assets/image%20%2816%29.png)
+
+
+
+```text
+function Animal (name) {
+
+  this.name = name || 'Animal';
+
+  this.sleep = function(){
+    console.log(this.name + '正在睡觉！');
+  }
+}
+
+Animal.prototype.eat = function(food) {
+  console.log(this.name + 'eat：' + food);
+};
+
+//inherited
+function Cat(){ 
+}
+Cat.prototype = new Animal();
+Cat.prototype.name = 'cat';
+
+//　Test Code
+var cat = new Cat();
+console.log(cat.name);
+console.log(cat.eat('fish'));
+console.log(cat.sleep());
+console.log(cat instanceof Animal); //true 
+console.log(cat instanceof Cat); //true
+```
+
+
 
