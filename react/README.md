@@ -54,6 +54,25 @@ React components are small, reusable pieces of code that return a React element 
 
 React Router is the standard routing library for React. React Router keeps your UI in sync with the URL. It has a simple API with powerful features like lazy code loading, dynamic route matching, and location transition handling. 
 
+
+
+```text
+import { BrowserRouter, Route, Link } from "react-router-dom";
+APP: <Switch>
+  <Route exact path="/" component={Home} />
+  <Route path="/about" component={About} />
+  <Route path="/contact" component={Contact} />
+</Switch>
+
+import { BrowserRouter } from "react-router-dom";
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  holder
+);
+```
+
 ## Synthetic Event
 
 Synthetic Event is a cross-browser wrapper around the browser's native event. It has the same interface as the browser's native event, including `stopPropagation()` and `preventDefault()`, except the events work identically across all browsers. 

@@ -147,3 +147,23 @@ db.users.deleteOne({age: 26}});
 
 ![Example](http://tutorial.haochuan.io/diagram/dist/crud-annotated-mongodb-deleteMany.bakedsvg.svg)
 
+## **mongoose** 
+
+**Schemas**  
+
+
+**Mongoose defines a schema for your data models so your documents follow a specific structure with pre-defined data types.**
+
+**Validation**
+
+**Mongoose has built in validation for schema definitions. This saves you from writing a bunch of validation code that you have to otherwise write with the MongoDB dirver.**
+
+**Instance Methods**
+
+**Mongoose provides optional pre and post save operations for data models. This makes it easy to define hooks and custom functionality on successful reads / writes.**
+
+**Returning results**
+
+**Mvongoose makes returning updates documents or query results easier**  
+
+
