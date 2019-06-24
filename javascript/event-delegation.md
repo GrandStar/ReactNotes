@@ -1,6 +1,14 @@
+---
+description: 'https://www.cnblogs.com/bfgis/p/5460191.html'
+---
+
 # Event delegation
 
 ## delegation,
+
+　　_**addEventListener\(event, listener, useCapture\)**_　　
+
+useCapture : true: capturing,      useCapture = false : bubbling
 
 Event delegation is a technique for listening to events where you _delegate_ a parent element as the listener for all of the events that happen inside it.
 

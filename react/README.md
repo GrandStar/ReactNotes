@@ -263,6 +263,8 @@ A higher order component is a function that takes a component and returns a new 
 
 [Higher Order Component Sample Code]()
 
+[https://levelup.gitconnected.com/understanding-react-higher-order-components-by-example-95e8c47c8006](https://levelup.gitconnected.com/understanding-react-higher-order-components-by-example-95e8c47c8006)
+
 ## Why is it advised to pass a callback function to setState as opposed to an Object
 
 Since this.props and this.state may be updated asynchronously, you should not rely on their values for calculating the next state.
