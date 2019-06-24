@@ -20,7 +20,7 @@ callback as second parameter. async -&gt; event loop, solve the block
 
 everything is event loop
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 Usage: node \[options\] \[ -e script \| script.js \] \[arguments\] 
 
@@ -71,7 +71,7 @@ if \(poll queue is empty\), {
 
 ### **check: run setImmediate\(\) callback, setImmediate\(\) will add to check**
 
-### **clase callback: run socket close callback**
+### **close callback: run socket close callback**
 
 ### **timers: run timer\(setTimeout, setInterval\)**
 
@@ -107,9 +107,9 @@ setTimeout(()=>{
 
 Browser：`timer1=>promise1=>timer2=>promise2`
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 node newest: timer1=&gt;promise1=&gt;timer2=&gt;promise2
 

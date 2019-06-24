@@ -8,7 +8,7 @@ JavaScript is a high-level, interpreted programming language.
 
 ## How JavaScript work
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](../.gitbook/assets/image%20%2816%29.png)
 
 * **Heap** - Objects are allocated in a heap which is just a name to denote a large mostly unstructured region of memory
 * **Stack** - This represents the single thread provided for JavaScript code execution. Function calls form a stack of frames \(more on this below\)
@@ -18,7 +18,7 @@ VIP插队： micro-task，   normal: macro-task
 
 promise iis micro
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![](../.gitbook/assets/image%20%2836%29.png)
 
 ## Shallow Comparison Check
 
@@ -163,7 +163,7 @@ const obj = new myObject("hello");
 
 ## Promise
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](../.gitbook/assets/image%20%2820%29.png)
 
 * Promise represents the eventual completion of an async operation
 * It must be in one of these states
@@ -252,30 +252,9 @@ Event Delegation Event Bubbling Event capturing
 
 ## Event Loop
 
-The event loop is a single-threaded loop that monitors the call stack and checks if there is any work to be done in the task queue. If the call stack is empty and there are callback functions in the tack queue, a function is dequeued and pushed onto the call stack to be executed. 
+The event loop is a single-threaded loop that monitors the call stack and checks if there is any work to be done in the task queue. If the call stack is empty and there are callback functions in the tack queue, a function is dequeued and pushed onto the call stack to be executed.
 
-## Event Bubbling
-
-When an event triggers on a DOM element, it will attempt to handle the vent if there is a listener attached, then the event is bubbled up to its parent and the same thing happens. The bubbling occurs up the element's ancestors all the way to the document. Event bubbling is the mechanism behind event delegation. 
-
-## Event Delegation
-
-Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements. The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM. 
-
-The benefits of this technique are:
-
-* Memory footprint goes down because only one single handler is needed on the parent element, rather than having to attach event handlers on each descendant.
-* There is no need to unbind the handler from elements that are removed and to bind the event for new elements. 
-
-## Event Delegation vs Event Bubbling
-
-Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
-
-Event bubbling is what the event itself does.
-
-## How to stop Event bubbling and capturing during Event delegation
-
-e.stopPropagation\(\)
+## 
 
 ## `setTimeout` and `setInterval`
 
@@ -473,7 +452,7 @@ PrimaryStudent.prototype.getGrade = function () {
 };
 ```
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 
 

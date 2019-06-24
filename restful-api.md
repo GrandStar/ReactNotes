@@ -19,7 +19,7 @@ In **PUT** method you have to send body params in `x-www-form-urlencoded`
 * **PUT** to a URL **creates/replaces the resource** in its entirety at the _client defined_ URL.
 * **PATCH** to a URL **updates** _**part**_ **of the resource** at that client defined URL.
 
-![](.gitbook/assets/image%20%284%29.png)
+![](.gitbook/assets/image%20%285%29.png)
 
 **POST creates a child resource**, so POST to `/items` creates a resources that lives under the `/items` resource. Eg. `/items/1`. Sending the same post packet twice will create two resources.
 
@@ -129,7 +129,7 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZ
 
 JWT that is signed by the HS256 algorithm
 
-![](.gitbook/assets/image%20%2813%29.png)
+![](.gitbook/assets/image%20%2814%29.png)
 
 ## How do you parse JSON in backend
 

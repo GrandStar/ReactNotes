@@ -109,9 +109,21 @@ Traverse:
 
 [`Array.prototype.map()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
+![](../.gitbook/assets/image%20%2819%29.png)
+
 [`Array.prototype.reduce()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
+let finalVal = oldArray.reduce\(\(accumulator, currentValue, currentIndex, array\) =&gt; { ... }\), initalValue;
+
+![](../.gitbook/assets/image%20%283%29.png)
+
+
+
 [`Array.prototype.some()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some)  `as least one or return false;`
+
+[`Array.prototype.filter()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some)\`\`
+
+![](../.gitbook/assets/image%20%2834%29.png)
 
 
 

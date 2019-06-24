@@ -6,7 +6,7 @@ we hava a xxx.js
 
 create a xxx.test.js
 
-![](.gitbook/assets/image%20%2822%29.png)
+![](.gitbook/assets/image%20%2824%29.png)
 
 ![](.gitbook/assets/image%20%282%29.png)
 
@@ -16,7 +16,7 @@ To use [Babel](http://babeljs.io/), install required dependencies via `yarn`
 
 "dependencies": { "babel-core": "^6.26.3", "babel-jest": "^23.6.0", "babel-preset-env": "^1.7.0", "jest": "^24.0.0" }
 
-![](.gitbook/assets/image%20%289%29.png)
+![](.gitbook/assets/image%20%2810%29.png)
 
 #### Using webpack
 
@@ -36,9 +36,9 @@ test('two plus two is four', () => {
 
 
 
-![](.gitbook/assets/image%20%2837%29.png)
+![](.gitbook/assets/image%20%2841%29.png)
 
-![](.gitbook/assets/image%20%2839%29.png)
+![](.gitbook/assets/image%20%2843%29.png)
 
 ## 
 

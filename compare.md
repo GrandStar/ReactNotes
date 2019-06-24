@@ -23,7 +23,7 @@ description: Compare the most interested concept
 | data structure that starts with a default value when a component mounts | component's configuration |
 | may be mutated across time, mostly as a result of user events | don't have to be just data, can also be callback functions |
 
-![](.gitbook/assets/image%20%2832%29.png)
+![](.gitbook/assets/image%20%2835%29.png)
 
 ## SQL vs No-SQL
 
@@ -76,7 +76,7 @@ description: Compare the most interested concept
 
 
 
-![](.gitbook/assets/image%20%2825%29.png)
+![](.gitbook/assets/image%20%2827%29.png)
 
 ## Server Side Rendering vs Client Side Rendering
 

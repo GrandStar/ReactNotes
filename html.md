@@ -135,7 +135,7 @@ app.all('/demo-credentials-can-work', function(req, res) {
 
 Access-Control-Allow-Credentials Access-Control-Allow-Methods
 
-![](.gitbook/assets/image%20%2824%29.png)
+![](.gitbook/assets/image%20%2826%29.png)
 
 ## URL structure
 

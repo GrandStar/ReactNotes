@@ -7,6 +7,7 @@
   * [How To CSS](css/how-to-css.md)
 * [Redux](redux.md)
 * [Javascript](javascript/README.md)
+  * [Event delegation](javascript/event-delegation.md)
   * [ES6 new features](javascript/es6-new-features.md)
   * [special function](javascript/special-function.md)
   * [function API](javascript/function-api.md)
