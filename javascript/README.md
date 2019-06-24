@@ -1,6 +1,6 @@
 # Javascript
 
-## JavaScript
+##  JavaScript
 
 JavaScript is a high-level, interpreted programming language.
 
@@ -18,7 +18,7 @@ VIP插队： micro-task，   normal: macro-task
 
 promise iis micro
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 ## Shallow Comparison Check
 
@@ -163,6 +163,8 @@ const obj = new myObject("hello");
 
 ## Promise
 
+![](../.gitbook/assets/image%20%2818%29.png)
+
 * Promise represents the eventual completion of an async operation
 * It must be in one of these states
   * pending
@@ -175,6 +177,14 @@ const obj = new myObject("hello");
 * promise.all 
   * returns a single promise that resolves when all of the promises in the argument have resolved or when the utterable argument contains no promises
 * create Promise example
+
+[`Promise.all(iterable)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)Wait for **all promises** to be resolved, or for any to be rejected. If the returned promise resolves, it is resolved with an aggregating array of the values from the resolved promises in the same order as defined in the iterable of multiple promises. I
+
+[`Promise.race(iterable)`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/race) ``Wait until **any o**f the promises is resolved or rejected. If the returned promise resolves, it is resolved with the value of the first promise in the iterable that resolved. If it rejects, it is rejected with the reason from the **first promise** that was rejected.
+
+[`Promise.reject(reason)`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject)
+
+[`Promise.resolve(value)`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve)Returns a new `Promise` object that is resolved with the given value. 
 
 ```javascript
 function asyncDoubble(n) {
@@ -235,6 +245,10 @@ A null process - which takes its name from the concept of null pointers - is wha
 | A node is fully explored before any other can begin | Exploration of a node is suspended as soon as another unexplored is found |
 | Uses Queue data structure to store un-explored nodes | Uses Stack data structure to store un-explored nodes |
 | BFS is slower and require more memory | DFS is faster and require less memory  |
+
+## Event:
+
+Event Delegation Event Bubbling Event capturing
 
 ## Event Loop
 
@@ -434,7 +448,9 @@ var regex = /dog/gi;
 
 console.log\(p.replace\(regex, 'ferret'\)\);
 
+Only words: 
 
+s.replace\(/\W/g, ''\)
 
 
 

@@ -10,9 +10,9 @@ description: About how to
 
 1. use position transform
 
-![&amp;lt;div class=&quot;outer&quot;&amp;gt;   &amp;lt;div class=&quot;inner&quot;&amp;gt;   &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;](../.gitbook/assets/image%20%2826%29.png)
+![&amp;lt;div class=&quot;outer&quot;&amp;gt;   &amp;lt;div class=&quot;inner&quot;&amp;gt;   &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;](../.gitbook/assets/image%20%2828%29.png)
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2831%29.png)
 
 ## Make multiply divs in a line.
 

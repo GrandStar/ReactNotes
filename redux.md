@@ -8,7 +8,7 @@ Redux is an open-source JavaScript library for managing application state. The b
 
 ![](.gitbook/assets/image%20%281%29.png)
 
-![](.gitbook/assets/image%20%2836%29.png)
+![](.gitbook/assets/image%20%2838%29.png)
 
 ## Why use Redux
 
@@ -126,7 +126,7 @@ store.dispatch = function dispatchAndLog(action) {
 
 {% embed url="https://store.dispatch" %}
 
-![](.gitbook/assets/image%20%2819%29.png)
+![](.gitbook/assets/image%20%2820%29.png)
 
 ```text
 const store = createStore(

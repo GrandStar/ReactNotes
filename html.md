@@ -27,7 +27,33 @@ The new inline elements define some basic concepts and keep them semantically ma
 
 ## Attribute vs Property
 
-Attributes are defined on the HTML markup but properties are defined on the DOM. 
+Attributes are defined on the HTML markup but properties are defined on the DOM.
+
+## HTTP response status codes
+
+[Information responses](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#Information_responses) [`100 Continue`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/100)This interim response indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished.[`101 Switching Protocol`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/101)This code is sent in response to an [`Upgrade`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Upgrade) request header by the client, and indicates the protocol the server is switching to.
+
+### Successful responses[Section](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#Successful_responses) <a id="Successful_responses"></a>
+
+[`200 OK`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)The request has succeeded. The meaning of a success varies depending on the HTTP method:  
+GET: The resource has been fetched and is transmitted in the message body.  
+HEAD: The entity headers are in the message body.  
+PUT or POST: The resource describing the result of the action is transmitted in the message body.
+
+[`201 Created`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201)The request has succeeded and a new resource has been created as a result of it. This is typically the response sent after a POST request, or after some PUT requests
+
+Redirection messages[Section](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#Redirection_messages)
+
+[`300 Multiple Choice`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/300)The request has more than one possible response. The user-agent or user should choose one of them. There is no standardized way of choosing one of the responses.
+
+Client error responses[Section](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#Client_error_responses)
+
+[`400 Bad Request`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)This response means that server could not understand the request due to invalid syntax.[`401 Unauthorized`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401)[`402 Payment Required`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402) [`403 Forbidden`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403)[`404 Not Found`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404)The server can not find requested resource. In the browser, this means the URL is not recognized. 
+
+Server error responses[Section](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#Server_error_responses)
+
+[`500 Internal Server Error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)The server has encountered a situation it doesn't know how to handle.  
+
 
 ## Cookie vs SessionStorage vs LocalStorage
 
@@ -82,6 +108,34 @@ The aside element represents a portion of the document whose content is only ind
 ## Cross-Origin Resource Sharing \([CORS](https://developer.mozilla.org/en-US/docs/Glossary/CORS)\) 
 
 Cross-Origin Resource Sharing \([CORS](https://developer.mozilla.org/en-US/docs/Glossary/CORS)\) is a mechanism that uses additional [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP)headers to tell a browser to let a web application running at one origin \(domain\) have permission to access selected resources from a server at a different origin. A web application executes a **cross-origin HTTP request** when it requests a resource that has a different origin \(domain, protocol, and port\) than its own origin.
+
+ **HTTP head**
+
+**Access-Control-Allow-Origin**
+
+```text
+Access-Control-Allow-Origin: <origin> | *
+
+
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Origin: http://foo.example
+
+
+app.all('/demo-normal', function(req, res) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.send('Hello World!');
+});
+
+app.all('/demo-credentials-can-work', function(req, res) {
+  res.header('Access-Control-Allow-Origin', req.headers.origin);
+  res.header('Access-Control-Allow-Credentials', 'true');
+  res.send('Hello World!');
+});
+```
+
+Access-Control-Allow-Credentials Access-Control-Allow-Methods
+
+![](.gitbook/assets/image%20%2824%29.png)
 
 ## URL structure
 

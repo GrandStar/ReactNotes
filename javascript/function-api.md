@@ -178,7 +178,7 @@ return 'cat'[1];
 
 [`String.prototype.repeat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)Returns a string consisting of the elements of the object repeated the given times.
 
-[`String.prototype.replace()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
+### [`String.prototype.replace()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
 
 [`String.prototype.search()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)Executes the search for a match between a regular expression and a specified string.
 

@@ -1,14 +1,20 @@
+---
+description: 'http://es6-features.org/#Constants'
+---
+
 # ES6 new features
 
 ## ES6 New Features
 
-* Let, Const
-* Class
-* Arrow Function
-* Spread and Destructing
-* Modules
-* Promise
-* Symbol
+* **Let, Const**
+* **Class**
+* **Arrow Function**
+* **Spread Operator** **and Destructing**
+* **Modules**
+* **Promise**
+* **Symbol**
+* Typed Arrays
+* Internationalization & Localization
 
 
 

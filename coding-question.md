@@ -34,6 +34,10 @@ Leetcode
 
       **push \), \], } into array, use pop\(\);**
 
+**26**  Remove Duplicates from Sorted Array
+
+    nums.splice\(i, 1\); i--;
+
 **27** [**Remove Element**](https://leetcode.com/problems/remove-element)    ****
 
     **nums.splice\(i, 1\), i--;**
