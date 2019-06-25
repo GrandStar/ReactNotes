@@ -97,6 +97,11 @@ var removedItem = fruits.splice(pos, 1);
 
 [`Array.prototype.slice()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)  `get some return a new array`
 
+```text
+arr.slice(begin, end);
+// [begin, end)
+```
+
 [`Array.prototype.toString()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/toString)
 
 [`Array.prototype.lastIndexOf()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf) `return the last index..`
@@ -146,6 +151,12 @@ let finalVal = oldArray.reduce\(\(accumulator, currentValue, currentIndex, array
 •Return a copy and doesn’t modify the input array
 
 •map and filter often are used together
+
+[`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)Copies the values of all enumerable own properties from one or more source objects to a target object.
+
+[`Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)Returns an array containing the names of all of the given object's **own** enumerable string properties.
+
+[`Object.values()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values)Returns an array containing the values that correspond to all of a given object's **own** enumerable string properties.
 
 ### Reduce\(\)
 

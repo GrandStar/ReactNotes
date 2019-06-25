@@ -78,6 +78,8 @@ Leetcode
 
 **\*\*\*\*\* 125 Valid Palindrom** 
 
+let str = s.replace\(/\W/g, ''\).toLowerCase\(\);
+
 **144** [**Binary Tree Preorder Traversal**](https://leetcode.com/problems/binary-tree-preorder-traversal)    ****
 
 **151** [**Reverse Words in a String**](https://leetcode.com/problems/reverse-words-in-a-string)   ****
