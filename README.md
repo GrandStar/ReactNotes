@@ -4,7 +4,11 @@ description: Study Book
 
 # Study Book
 
-HTML CSS JAVASCRIPT REACT REDUX NODEJS RESTFUL API The conception and how to write good code.
+React node js full stack study note.
 
-Special thanks to Tianlinlu
+HTML CSS JAVASCRIPT REACT REDUX 
+NODEJS EXPRESS RESTFUL API MONGODB
+The conception and how to write good code.
+
+Special thanks to Tianlinlu and his project.
 
