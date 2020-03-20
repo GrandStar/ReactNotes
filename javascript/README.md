@@ -8,7 +8,7 @@ JavaScript is a high-level, interpreted programming language.
 
 ## How JavaScript work
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2818%29.png)
 
 * **Heap** - Objects are allocated in a heap which is just a name to denote a large mostly unstructured region of memory
 * **Stack** - This represents the single thread provided for JavaScript code execution. Function calls form a stack of frames \(more on this below\)
@@ -18,7 +18,7 @@ VIP插队： micro-task，   normal: macro-task
 
 promise iis micro
 
-![](../.gitbook/assets/image%20%2836%29.png)
+![](../.gitbook/assets/image%20%2840%29.png)
 
 ## Shallow Comparison Check
 
@@ -163,7 +163,7 @@ const obj = new myObject("hello");
 
 ## Promise
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 * Promise represents the eventual completion of an async operation
 * It must be in one of these states
@@ -247,6 +247,8 @@ Callback Hell is referred to the problems caused by asynchronous AJAX calls, whi
 * jQuery 
 * Fetch
 * Axios
+
+
 
 ## Fetch 
 
@@ -351,6 +353,14 @@ cons:
 ## How can you make people not change the value
 
 Object.freeze\(\)
+
+
+
+## JWT
+
+JSON Web Tokens \(JWT\) are an important piece in ensuring trust and security in your application. JWT allow claims, such as user data, to be represented in a secure manner.
+
+![](../.gitbook/assets/image%20%284%29.png)
 
 ## Strict Mode - pros & cons 
 
@@ -477,7 +487,7 @@ PrimaryStudent.prototype.getGrade = function () {
 };
 ```
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../.gitbook/assets/image%20%2819%29.png)
 
 
 

@@ -135,9 +135,17 @@ app.all('/demo-credentials-can-work', function(req, res) {
 
 Access-Control-Allow-Credentials Access-Control-Allow-Methods
 
-![](.gitbook/assets/image%20%2826%29.png)
+![](.gitbook/assets/image%20%2828%29.png)
 
-## URL structure
+
+
+## Cross-Origin Resource Sharing \([CORS](https://developer.mozilla.org/en-US/docs/Glossary/CORS)\) 
+
+Cross-Origin Resource Sharing \([CORS](https://developer.mozilla.org/en-US/docs/Glossary/CORS)\) iis a mechanism that uses additional [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP)headers to tell a browser to let a web application running at one origin \(domain\) have permission to access selected resources from a server at a different origin. A web application executes a **cross-origin HTTP request** when it requests a resource that has a different origin \(domain, protocol, and port\) than its own origin.
+
+An example of a cross-origin request: The frontend JavaScript code for a web application served from `http://domain-a.com` uses [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) to make a request for `http://api.domain-b.com/data.json`.
+
+![](.gitbook/assets/image%20%2832%29.png)
 
 {% embed url="http://www.example.com:80/path/to/myfile.html?key1=value1&key2=value2\#SomewhereInTheDocument" %}
 

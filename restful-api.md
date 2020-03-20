@@ -19,7 +19,7 @@ In **PUT** method you have to send body params in `x-www-form-urlencoded`
 * **PUT** to a URL **creates/replaces the resource** in its entirety at the _client defined_ URL.
 * **PATCH** to a URL **updates** _**part**_ **of the resource** at that client defined URL.
 
-![](.gitbook/assets/image%20%285%29.png)
+![](.gitbook/assets/image%20%286%29.png)
 
 **POST creates a child resource**, so POST to `/items` creates a resources that lives under the `/items` resource. Eg. `/items/1`. Sending the same post packet twice will create two resources.
 
@@ -47,7 +47,7 @@ Flux is used for building client-side web applications. It implements React's co
 
 Any time you are inside a promise callback, you can use `throw`. However, if you are in any other asynchronous callback, you must use `reject`. Moreover, `reject` does not terminate control flow like a `return` statement does. In contrast `throw` does terminate control flow.
 
-## AJAX
+## AJAX in Reastful
 
 AJAX \(Asynchronous JavaScript and XML\) is to create asynchronous web applications. With AJAX, web applications can send data and retrieve from a server asynchronously in the background without the need to reload the entire page. 
 
@@ -129,7 +129,7 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZ
 
 JWT that is signed by the HS256 algorithm
 
-![](.gitbook/assets/image%20%2814%29.png)
+![](.gitbook/assets/image%20%2816%29.png)
 
 ## How do you parse JSON in backend
 
