@@ -231,6 +231,20 @@ new Promise(function(resolve, reject) {
 
 A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action. e.g. addEventListener
 
+```text
+function modifyArray(arr, callback) {
+    // do something to arr here
+    arr.push(100);
+    // then execute the callback function that was passed
+    callback();
+}
+
+var arr = [1, 2, 3, 4, 5];
+modifyArray(arr, function() {
+    console.log("array has been modified", arr);
+});
+```
+
 ## Callback Hell
 
 Callback Hell is referred to the problems caused by asynchronous AJAX calls, which means where are multiple nested callbacks. 
@@ -520,5 +534,25 @@ console.log(cat instanceof Animal); //true
 console.log(cat instanceof Cat); //true
 ```
 
+## Coercion
+
+
+
+```text
+var a = "42";
+var b = Number(a);
+a; // "42"
+b; // 42 -- the numbeber
+```
+
+```text
+var a = "42";
+var b = a * 1; // "42" implicitly coerced to 42 here
+a; // "42"
+b; // 42 -- the number!
+```
+
+|  |
+| :--- |
 
 
