@@ -23,24 +23,3 @@ Random array
 **}**  
 
 
-## 7 ways to flip two varibles
-
-a = "hello", b = "bye";
-
-1. var c = a; a = b; b = c;
-2.  a = a + b; b = a - b; a = a - b;        -------- a = a - b; b = a + b; a = b - a;
-3. a ^= b; b ^= a; a ^= b;          a = \(b^=a^=b\)^a;
-4. a = {a:b,b:a}; b = a.b; a = a.a;
-5. a = \[a,b\]; b = a\[0\]; a = a\[1\];
-6. a = \[b,b=a\]\[0\];                   -------     
-
-   ```text
-   b = [a, a = b][0];
-
-   a = b + (b = a, "");
-   ```
-
-7. \[a,b\] = \[b,a\];
-
-
-

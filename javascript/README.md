@@ -42,6 +42,84 @@ The closure has access to variables in three scopes
 
 We can use Closure to declare a private variable.
 
+1What will the following code output?
+
+```text
+for (var i = 0; i < 3; i++) {
+  setTimeout(function() { alert(i); }, 1000 + i);
+}
+```
+
+Answer
+
+number **3** alerted 3 times after 1, 1.1, and 1.2 seconds.
+
+Solve: use IIFE or let. 
+
+```text
+
+for (var i = 0; i < 3; i++) {
+  setTimeout(function(i_local) { 
+    return function() { alert(i_local); } 
+  }(i), 1000 + i);
+}
+```
+
+We pass the variable i into the outer function as a local variable named i\_local, where we then return a function that will alert the i\_local for us. This should now correctly alert the numbers 0, 1, and 2 in the correct order.
+
+2. Write a function that would allow you to do this.
+
+```text
+var addSix = createBase(6);
+addSix(10); // returns 16
+addSix(21); // returns 27Answer
+```
+
+You can create a closure to keep the value passed to the function createBase even after the inner function is returned. The inner function that is being returned is created within an outer function, making it a [closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures), and it has access to the variables within the outer function, in this case the variable baseNumber.
+
+```text
+function createBase(baseNumber) {
+  return function(N) {
+    // we are referencing baseNumber here even though it was declared
+    // outside of this function. Closures allow us to do this in JavaScript
+    return baseNumber + N;
+  }
+}
+
+var addSix = createBase(6);
+addSix(10);
+addSix(21);
+```
+
+
+
+How would you use a closure to create a private counter?Answer
+
+You can create a function within an outer function \(a closure\) that allows you to update a [private variable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Emulating_private_methods_with_closures) but the variable wouldn't be accessible from outside the function without the use of a helper function.
+
+```text
+function counter() {
+  var _counter = 0;
+  // return an object with several functions that allow you
+  // to modify the private _counter variable
+  return {
+    add: function(increment) { _counter += increment; },
+    retrieve: function() { return 'The counter is currently at: ' + _counter; }
+  }
+}
+
+// error if we try to access the private variable like below
+// _counter;
+
+// usage of our counter function
+var c = counter();
+c.add(5); 
+c.add(9); 
+
+// now we can access the private variable in the following way
+c.retrieve(); // => The counter is currently at: 14
+```
+
 ## Higher-Order Function
 
 A higher-order function is any function that takes one or more functions as arguments, which it uses to operate on some data, and/or returns a function as a result. Higher-order functions are meant to abstract some operation that is performed repeatedly. e.g.`map`, `forEach`, `filter`, `reduce`, `bind`. 
