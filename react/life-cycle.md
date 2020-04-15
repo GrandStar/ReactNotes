@@ -35,11 +35,11 @@ Error Handling
 
 
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%2836%29.png)
 
 
 
-![](../.gitbook/assets/image%20%2841%29.png)
+![](../.gitbook/assets/image%20%2843%29.png)
 
 **Mounting**
 
@@ -64,7 +64,7 @@ The list of methods that will get called in sequence when the update happens in 
 * **render** And then the component gets rendered \(details in mounting phase\).
 * **getSnapshotBeforeUpdate**
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../.gitbook/assets/image%20%2818%29.png)
 
   
 ****This method gets called after the render created the React element and before it is actually updated from virtual DOM to actual DOM. This phase is known as `pre-commit` phase.
@@ -80,5 +80,5 @@ The list of methods that will get called in sequence when the update happens in 
 
 ## Old Life Cycle
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 

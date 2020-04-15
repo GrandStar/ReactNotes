@@ -27,4 +27,5 @@
 * [Test](test.md)
 * [Deploy development](deploy-development.md)
 * [coding question](coding-question.md)
+* [DevOps](devops.md)
 

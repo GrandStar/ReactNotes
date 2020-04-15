@@ -4,11 +4,13 @@
 
 Redux is an open-source JavaScript library for managing application state. The basic idea of redux is that the entire application state is kept in a single store. The store is simply a JavaScript object. The only way to change the state is by firing actions from your application and then writing reducers for these actions that modify the state. The entire state transition is kept inside reducers and should not have any side-effects. 
 
+![](.gitbook/assets/image%20%2817%29.png)
+
 ## How does Redux work
 
 ![](.gitbook/assets/image%20%281%29.png)
 
-![](.gitbook/assets/image%20%2846%29.png)
+![](.gitbook/assets/image%20%2848%29.png)
 
 ## Why use Redux
 
@@ -126,7 +128,7 @@ store.dispatch = function dispatchAndLog(action) {
 
 {% embed url="https://store.dispatch" %}
 
-![](.gitbook/assets/image%20%2824%29.png)
+![](.gitbook/assets/image%20%2825%29.png)
 
 ```text
 const store = createStore(
