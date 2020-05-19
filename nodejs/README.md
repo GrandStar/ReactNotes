@@ -55,7 +55,7 @@ the kernel tells Node.js so that the appropriate callback may be added to the **
    └───────────────────────────┘
 ```
 
-### **poll: poll new I/O, back to timer,** 
+### **poll: poll new I/O, back to timer,**   
 
 if \(poll queue is empty\), { 
 
