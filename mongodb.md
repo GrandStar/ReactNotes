@@ -113,7 +113,11 @@ Read operations retrieves documents from a collection; i.e. queries a collection
 
 * db.collection.find\(\)
 
+Find all documents...
+
 You can specify query filters or criteria that identify the documents to return. For exmaple,
+
+find\({object}\) ----- object : restriction 
 
 * `db.users.find()` will give you all documents in the `users` collection.
 * `db.users.find({status: "pending"})` will only give you the documents with `status="pending"`
@@ -140,6 +144,8 @@ Delete operations remove documents from a collection. MongoDB provides the follo
 
 * db.collection.deleteOne\(\)
 * db.collection.deleteMany\(\)
+* db.collection.remove\(\)  ---- one or multiple. second parameter: true only one.
+* remove must has a parameter... or .... delete everything.
 
 ```text
 db.users.deleteOne({age: 26}});
