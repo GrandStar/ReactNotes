@@ -68,8 +68,18 @@ inline style &gt; ID selector &gt; class, attribute and pseudo-class selector &g
 
 * Media query 
   * Media query made it possible to define different style rules for different media types. By using media query, we can do responsive web design to handle different devices' viewport. 
+  * / _iphone6 7 8_ /
+  *  body { background-color: yellow; } 
+  * / _iphone 5_ / 
+  * @media screen and \(max-width: 320px\) { body { background-color: red; } } 
+  * / _iphoneX_ / 
+  * @media screen and \(min-width: 375px\) and \(-webkit-device-pixel-ratio: 3\) { body { background-color: \#0FF000; } }
 * Flexbox 
   * Need a container with attributes display: flex, flex-direction: column/row\(-reserve\), flex-wrap: \(no\)wrap\(-reverse\), flex-flow: setting both the flex-direction and flex-wrap
+
+
+
+
 
 ## Media Query 
 
