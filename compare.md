@@ -69,7 +69,9 @@ description: Compare the most interested concept
       </td>
     </tr>
   </tbody>
-</table>| Stateless Component | Stateful Component |
+</table>
+
+| Stateless Component | Stateful Component |
 | :--- | :--- |
 | don't have state | have state |
 | can use function expression to create | must use class expression |
@@ -220,7 +222,9 @@ description: Compare the most interested concept
       </td>
     </tr>
   </tbody>
-</table>Smart组件负责数据相关的应用逻辑，将获取到的数据通过props传递给Dumb组件，Dumb负责UI的呈现。
+</table>
+
+Smart组件负责数据相关的应用逻辑，将获取到的数据通过props传递给Dumb组件，Dumb负责UI的呈现。
 
 Smart usually as Dumb parents component
 

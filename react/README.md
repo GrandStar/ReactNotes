@@ -71,6 +71,20 @@ ReactDOM.render(
   </BrowserRouter>,
   holder
 );
+
+```
+
+## pass props in the router.
+
+use render.
+
+```text
+<Route
+  path='/dashboard'
+  render={(props) => (
+    <Dashboard {...props} isAuthed={true} />
+  )}
+/>
 ```
 
 ## Synthetic Event
@@ -238,6 +252,14 @@ In most cases you should use controlled components.
 ## Single-page Application
 
 A single-page application is an application that loads a single HTML page and all the necessary assets \(such as JavaScript and CSS\) required for the application to run. Any interactions with the page or subsequent pages do not require a round trip to the server which means the page is not reloaded.
+
+![](../.gitbook/assets/image%20%2850%29.png)
+
+we write our code in such a way that it can run on both the server and in a browser, meaning we only render once on the server and subsequent pages are fetched without full page reloads.
+
+To facilitate this we use NodeJS to serve our front-end application. This is a small layer which sits between our back-end and the client. It does API calls to fetch all the data it needs to render the current view and then returns the full markup back to the browser.
+
+One thing to note is that these API calls are going from server to server over a high-speed internet connection meaning we don’t have to burden our users with doing these calls over \(much\) slower connections.
 
 ## Refs
 

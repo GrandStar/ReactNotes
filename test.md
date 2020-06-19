@@ -40,5 +40,26 @@ test('two plus two is four', () => {
 
 ![](.gitbook/assets/image%20%2847%29.png)
 
-## 
+
+
+ [**Jasmine**](https://jasmine.github.io/)\*\*\*\*
+
+```text
+describe("A suite is just a function", function() {
+  var a;
+
+  it("and so is a spec", function() {
+    a = true;
+
+    expect(a).toBe(true);
+  });
+});444444
+```
+
+  
+****
+
+
+
+
 

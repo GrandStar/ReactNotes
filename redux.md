@@ -6,7 +6,7 @@ Redux is an open-source JavaScript library for managing application state. The b
 
 ![](.gitbook/assets/image%20%2817%29.png)
 
-## Ho w does Redux work
+## How does Redux work
 
 ![](.gitbook/assets/image%20%281%29.png)
 

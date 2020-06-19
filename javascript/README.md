@@ -373,7 +373,13 @@ Event Delegation Event Bubbling Event capturing
 
 The event loop is a single-threaded loop that monitors the call stack and checks if there is any work to be done in the task queue. If the call stack is empty and there are callback functions in the tack queue, a function is dequeued and pushed onto the call stack to be executed.
 
-## 
+## Currying
+
+Currying refers to the process of transforming a function with multiple arity into the same function with less arity. The curried effect is achieved by binding some of the arguments to the first function invoke, so that those values are fixed for the next invocation
+
+![](../.gitbook/assets/image%20%2851%29.png)
+
+babyAnimals is a curried function;
 
 ## `setTimeout` and `setInterval`
 

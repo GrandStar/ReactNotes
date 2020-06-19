@@ -216,6 +216,21 @@ app.use(function(err, req, res, next) {
   console.error(err.stack);
   res.status(500).send('Something broke!');
 });
+
+app.get('/error', function (req, res) {
+  throw new Error('BROKEN') // Express will catch this on its own.
+})
+
+
+app.get('/', function (req, res, next) {
+  fs.readFile('/file-does-not-exist', function (err, data) {
+    if (err) {
+      next(err) // Pass errors to Express.
+    } else {
+      res.send(data)
+    }
+  })
+})
 ```
 
 
