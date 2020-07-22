@@ -16,9 +16,15 @@ ReturnNew: concat\(\), slice\(\)
 array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
 ```
 
-Matching: indexOf\(\), lastIndexOf\(\), find\(\), findIndex\(\), some\(\), every\(\), join\(\)
+Matching: indexOf\(\), lastIndexOf\(\), find\(\), findIndex\(\), some\(\), every\(\), join\(\)ty
 
+#### Empty the Array
 
+var arr = \[1\]
+
+1. arr.splice\(0, arr.length\);
+2. arr.length = 0;
+3. arr = \[\]
 
 **traverse forEach** executes the provided callback once for each element present in the array in ascending order.
 

@@ -8,6 +8,23 @@ top two frequents in array
 
 flattern object/array
 
+#### 
+
+```text
+function flatten(arr) {
+  return arr.reduce((a, b) => {
+    // return Array.isArray(b) ? a.concat(flatten(b)) : a.concat(b);
+    return a.concat(Array.isArray(b) ? flatten(b) : b);
+  }, []);
+};
+
+// es6
+const flatten = arr =>
+  arr.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []);
+```
+
+
+
 closure:
 
   Fibonacci closure:
@@ -55,6 +72,8 @@ Leetcode
 **46** [**Permutations**](https://leetcode.com/problems/permutations)    ****
 
 **48** [**Rotate Image**](https://leetcode.com/problems/rotate-image)    ****
+
+**49**
 
 **73** [**Set Matrix Zeroes**](https://leetcode.com/problems/set-matrix-zeroes) ****
 
