@@ -176,7 +176,7 @@ prototypal inheritance: a prototype is a working object instance. Objects inheri
 
 ## `null` vs `undefined`
 
-A variable that is`undefined` is a a variable that has been declared, but not assigned a value. It is of type `undefined`. 
+A variable that is `undefined` is a a variable that has been declared, but not assigned a value. It is of type `undefined`. 
 
 A variable that is `null` will have been explicitly assigned to the `null` value. It represents no value and is different from `undefined` in the sense that it has been explicitly assigned. It is of type `object`. 
 
