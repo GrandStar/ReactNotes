@@ -106,3 +106,29 @@ An example of a cross-origin request: The frontend JavaScript code for a web app
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 
+
+
+
+
+## HTTP/2 <a id="firstHeading"></a>
+
+#### Goals:
+
+* Create a negotiation mechanism that allows clients and servers to elect to use HTTP 1.1, 2.0, or potentially other non-HTTP protocols.
+* Maintain high-level compatibility with HTTP 1.1 \(for example with [methods](https://en.wikipedia.org/wiki/HTTP_method), [status codes](https://en.wikipedia.org/wiki/HTTP_status_code), [URIs](https://en.wikipedia.org/wiki/URI), and most [header fields](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)\).
+* Decrease [latency](https://en.wikipedia.org/wiki/Latency_%28engineering%29) to improve page load speed in [web browsers](https://en.wikipedia.org/wiki/Web_browser) by considering:
+  * [data compression](https://en.wikipedia.org/wiki/Data_compression) of [HTTP headers](https://en.wikipedia.org/wiki/HTTP_header)
+  * [HTTP/2 Server Push](https://en.wikipedia.org/wiki/HTTP/2_Server_Push)
+  * [pipelining](https://en.wikipedia.org/wiki/HTTP_pipelining) of requests
+  * fixing the [head-of-line blocking](https://en.wikipedia.org/wiki/Head-of-line_blocking) problem in HTTP 1.x
+  * [multiplexing](https://en.wikipedia.org/wiki/Multiplexing) multiple requests over a single [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) connection
+* Support common existing use cases of HTTP, such as desktop web browsers, mobile web browsers, web APIs, [web servers](https://en.wikipedia.org/wiki/Web_server) at various scales, [proxy servers](https://en.wikipedia.org/wiki/Proxy_server), [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy) servers, [firewalls](https://en.wikipedia.org/wiki/Firewall_%28computing%29), and [content delivery networks](https://en.wikipedia.org/wiki/Content_delivery_network).
+
+Hashing Token.  Web socket Token
+
+bearer token
+
+[OAuth 2.0 Bearer Token Usage](https://oauth.net/2/bearer-tokens/)
+
+OAuth2 `accessCode`
+

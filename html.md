@@ -55,6 +55,8 @@ Server error responses[Section](https://developer.mozilla.org/en-US/docs/Web/HTT
 [`500 Internal Server Error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)The server has encountered a situation it doesn't know how to handle.  
 
 
+## maintain User login session <a id="ext-gen29"></a>
+
 ## Cookie vs SessionStorage vs LocalStorage
 
 All the above-mentioned technologies are key-value storage mechanisms on the client side. They are only able to store values are strings.

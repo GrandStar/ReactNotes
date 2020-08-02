@@ -40,6 +40,32 @@ Dropdown  Link 1 Link 2 Link 3
 
 
 
+## CSS Layout - Horizontal & Vertical Align
+
+#### \`\`[`https://www.w3schools.com/css/css_align.asp`](https://www.w3schools.com/css/css_align.asp)\`\`
+
+#### Center Align Elements
+
+.To horizontally center a block element \(like &lt;div&gt;\), use `margin: auto;`
+
+center { margin: auto; width: 50%; }
+
+#### Center Align Text
+
+.center { text-align: center; }
+
+#### Center an Image
+
+img { display: block; margin-left: auto; margin-right: auto; width: 40%; }
+
+#### Left and Right Align - Using position
+
+.right { position: absolute; right: 0px; width: 300px; border: 3px solid \#73AD21; padding: 10px; }
+
+#### Left and Right Align - Using float
+
+.right { float: right; width: 300px; border: 3px solid \#73AD21; padding: 10px; }
+
 
 
 

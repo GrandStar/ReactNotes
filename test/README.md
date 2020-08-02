@@ -1,5 +1,11 @@
 # Test
 
+## integration testing
+
+## Unit testing
+
+functional testing
+
 ## Jest
 
 we hava a xxx.js

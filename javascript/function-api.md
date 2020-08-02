@@ -265,3 +265,11 @@ Float
 
 parseFloat\(String s\) return float
 
+
+
+## JSON
+
+JSON.stringify\(\) Convert a JavaScript object into a string
+
+JSON.parse\(\)  Convert text into a JavaScript object:
+
