@@ -261,3 +261,7 @@ typeof str; // It will return 'object'
 typeof num; // It will return 'object'
 ```
 
+Float
+
+parseFloat\(String s\) return float
+

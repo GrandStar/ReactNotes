@@ -176,7 +176,7 @@ prototypal inheritance: a prototype is a working object instance. Objects inheri
 
 ## `null` vs `undefined`
 
-A variable that is `undefined` is a a variable that has been declared, but not assigned a value. It is of type `undefined`. 
+A variable that is`undefined` is a a variable that has been declared, but not assigned a value. It is of type `undefined`. 
 
 A variable that is `null` will have been explicitly assigned to the `null` value. It represents no value and is different from `undefined` in the sense that it has been explicitly assigned. It is of type `object`. 
 
@@ -332,6 +332,28 @@ Callback Hell is referred to the problems caused by asynchronous AJAX calls, whi
 * keep the code shallow
 * modularize
 * handle every single error
+
+## [Async/Await](https://levelup.gitconnected.com/async-await-vs-promises-4fe98d11038f)
+
+![](../.gitbook/assets/image%20%2852%29.png)
+
+![](../.gitbook/assets/image%20%2853%29.png)
+
+Promise The asynchronism here is all contained in the promise chain. `myFunction` operates like any callback would, running synchronously. Our last log will print “I’m over here running synchronously” before `returnsAPromise` resolves.
+
+![](../.gitbook/assets/image%20%2855%29.png)
+
+
+
+ In our async/await version, we have to make our _entire wrapper function_ asynchronous. This has a couple of effects— now, `myAsyncFunction` returns a promise, and any synchronous code we want to run has to be pulled out of the function entirely.
+
+![](../.gitbook/assets/image%20%2854%29.png)
+
+
+
+
+
+
 
 ## How to make HTTP request
 

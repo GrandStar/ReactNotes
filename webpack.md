@@ -92,6 +92,14 @@ While loaders are used to transform certain types of modules, plugins can be lev
 
 In order to use a plugin, you need to `require()` it and add it to the `plugins` array. Most plugins are customizable through options. Since you can use a plugin multiple times in a config for different purposes, you need to create an instance of it by calling it with the `new` operator.
 
+Tapable
+
+This small library is a core utility in webpack but can also be used elsewhere to provide a similar plugin interface. Many objects in webpack extend the `Tapable` class. The class exposes `tap`, `tapAsync`, and `tapPromise` methods which plugins can use to inject custom build steps that will be fired throughout a compilation.
+
+Please see the [documentation](https://github.com/webpack/tapable) to learn more. An understanding of the three `tap` methods, as well as the hooks that provide them is crucial. The objects that extend `Tapable` \(e.g. the compiler\), the hooks they provide, and each hook's type \(e.g. the `SyncHook`\) will be noted.
+
+
+
 **webpack.config.js**
 
 ```text
@@ -123,4 +131,28 @@ module.exports = {
   mode: 'production'
 };
 ```
+
+## Hot Module Replacement
+
+\(HMR\) exchanges, adds, or removes [modules](https://webpack.js.org/concepts/modules/) while an application is running, without a full reload. This can significantly speed up development in a few ways:
+
+* Retain application state which is lost during a full reload.
+* Save valuable development time by only updating what's changed.
+* Modifications made to CSS/JS in the source code results in an instant browser update which is almost comparable to changing styles directly in the browser's dev tools.
+
+The following steps allow modules to be swapped in and out of an application:
+
+1. The application asks the HMR runtime to check for updates.
+2. The runtime asynchronously downloads the updates and notifies the application.
+3. The application then asks the runtime to apply the updates.
+4. The runtime synchronously applies the updates.
+
+In addition to normal assets, the compiler needs to emit an "update" to allow updating from previous version to the new version. The "update" consists of two parts:
+
+1. The updated [manifest](https://webpack.js.org/concepts/manifest) \(JSON\)
+2. One or more updated chunks \(JavaScript\)
+
+The manifest contains the new compilation hash and a list of all updated chunks. Each of these chunks contains the new code for all updated modules \(or a flag indicating that the module was removed\).
+
+The compiler ensures that module IDs and chunk IDs are consistent between these builds. It typically stores these IDs in memory \(e.g. with [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)\), but it's also possible to store them in a JSON file.
 
