@@ -16,8 +16,6 @@ var xhttp = new XMLHttpRequest\(\);
 
 
 
-
-
 ### XMLHttpRequest Object Methods
 
 | Method | Description |

@@ -658,7 +658,37 @@ a; // "42"
 b; // 42 -- the number!
 ```
 
-|  |
-| :--- |
+## KOA.js  
 
+{% embed url="https://juejin.im/post/6844903888458366989" %}
+
+[https://chenshenhai.github.io/koajs-design-note/](https://chenshenhai.github.io/koajs-design-note/)
+
+```text
+ callback() {
+    let that = this;
+
+    if (this.listeners('error').length === 0) {
+      this.on('error', this.onerror);
+    }
+
+    const handleRequest = (req, res) => {
+      let context = that.createContext(req, res);
+      this.middleware.forEach((cb, idx) => {
+        try {
+          cb(context);
+        } catch (err) {
+          that.onerror(err);
+        }
+
+        if (idx + 1 >= this.middleware.length) {
+          if (res && typeof res.end === 'function') {
+            res.end();
+          }
+        }
+      });
+    };
+    return handleRequest;
+  }
+```
 

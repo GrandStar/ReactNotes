@@ -132,3 +132,46 @@ bearer token
 
 OAuth2 `accessCode`
 
+## Validating a REST API
+
+#### Validating HTTP Response Codes
+
+* **200 OK:** no additional information is provided
+* **201 Created:** a new data item was created on the server
+* **202 Accepted:** the server has received the request, but hasn’t finished processing it
+* **203 Non-Authorative Information:** a proxy server sent the response based on a response from the endpoint server, but the response isn’t identical to the response the proxy received
+* **204 No Content:** the server processed the request and returned no content
+* **205 Reset Content:** like 204, but the requester should reset its data view
+* **206 Partial Content:** the content is a subset of the entire data set because the request asked for this
+* **207 Multi-Status:** the response body is an XML document containing additional status information
+* **208 Already Reported:** a follow-on related to 207
+* **226 IM Used:** the response is a representation of one or more instance manipulations \(IMs\) applied to the current instance
+
+**Validating HTTP Headers**
+
+![](.gitbook/assets/image%20%2857%29.png)
+
+The `Content-Type` header illustrates the value of applying JavaScript to validate headers. If your application expects to receive a [JSON](http://www.json.org/) \(JavaScript Object Notation\) response body, then from the point of view of your application, this API is down if the response’s `Content-Type` header doesn’t include `application/json`.
+
+#### Timing-Out Slow-Performing API Requests
+
+#### Time-outs with Respect to Data Size
+
+#### Using JavaScript to Validate API Response Bodies
+
+#### Using Regular Expressions and JavaScript to Validate API Responses
+
+
+
+[query-auth](https://github.com/jeremykendall/query-auth)
+
+Websocket
+
+![](.gitbook/assets/image%20%2856%29.png)
+
+![](.gitbook/assets/image%20%2858%29.png)
+
+{% embed url="https://www.ruanyifeng.com/blog/2017/05/websocket.html" %}
+
+
+
