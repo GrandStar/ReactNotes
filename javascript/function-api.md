@@ -172,7 +172,15 @@ array.reduce\(\(accumulator, currentValue, currentIndex, sourceArray\) =&gt; {  
 arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])
 ```
 
+## For Loop:
 
+for（x of Array） {//  }  arrays strings maps nodelists etc
+
+but loop an object: we use in.
+
+for \(x in Object\){ //  }
+
+While loop  / do while loop
 
 ## String
 
