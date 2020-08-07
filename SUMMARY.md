@@ -17,7 +17,7 @@
 * [React](react/README.md)
   * [Testing](react/testing.md)
   * [New Features](react/new-features.md)
-  * [used Hook](react/used-hook.md)
+  * [Hook](react/used-hook.md)
   * [Simple code](react/simple-code.md)
   * [Life Cycle](react/life-cycle.md)
 * [NodeJS](nodejs/README.md)

@@ -1,4 +1,4 @@
-# used Hook
+# Hook
 
 ## useState
 
@@ -45,6 +45,8 @@ export default App;
 
 ## useEffect & useRef & useContext
 
+useEffect:  `componentDidMount   componentDidUpdate`  `componentWillUnmount`
+
 ```jsx
 import React, { useEffect, useRef, useContext } from 'react';
 import AuthContext from '../../context/auth-context';
@@ -77,6 +79,16 @@ const cockpit = props => {
 };
 
 export default React.memo(cockpit);
+```
+
+## UseContext
+
+recieved a React.createContext
+
+return   ---- `<MyContext.Provider>`   `value` prop  
+
+```text
+const value = useContext(MyContext);
 ```
 
 ## Counter Example

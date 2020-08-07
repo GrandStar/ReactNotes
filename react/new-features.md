@@ -15,6 +15,10 @@ real-time applications
 
 ## Context API
 
+context is like a global value
+
+use context.provider, then use this.context to get it
+
 \`\`[`https://codesandbox.io/s/contextdemo-di5x7`](https://codesandbox.io/s/contextdemo-di5x7)\`\`
 
 ```text

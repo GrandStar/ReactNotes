@@ -109,13 +109,69 @@ const store = createStore(counter);
 
 ## Redux Thunk
 
+![](.gitbook/assets/image%20%2859%29.png)
+
+Thunk is think/thought   to manage state
+
+This is thunk
+
+```text
+// calculation of 1 + 2 is immediate
+// x === 3
+let x = 1 + 2;
+
+// calculation of 1 + 2 is delayed
+// foo can be called later to perform the calculation
+// foo is a thunk!
+let foo = () => 1 + 2;
+```
+
 Redux thunk is a middleware that allows you to **write action creators that return a function instead of an action**. The thunk can then be used to delay the dispatch of an action if a certain condition is met. This allows you to handle the asynchronous dispatching of actions. This also allows you to dispatch multiple actions. 
+
+Reducer is the same... only store=createStore\(rootReducer, applyMiddleware\(thunk\)\)
+
+Different is the action: will be a HOF. async
+
+```text
+export const fetchData = args => async (dispatch, getState) => {
+  const state = getState();
+  const url = '';
+
+  try {
+    const response = await fetch(url)
+      .then(resp => {
+        return resp;
+      })
+      .then(resp => resp.json());
+
+    dispatch({
+      type: REMOTE_DATA_RECEIVED,
+      data: response
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+```
 
 ![](.gitbook/assets/image%20%288%29.png)
 
 only store.dispatch\(\) function
 
 in redux thunk
+
+
+
+```text
+const store = createStore(rootReducer, applyMiddleware(thunk));
+
+ReactDOM.render(
+  <Provider store={store}>
+    <Routes />
+  </Provider>,
+  document.getElementById('root')
+);
+```
 
 ```text
 let next = store.dispatch;
@@ -163,6 +219,14 @@ Functions typically seen in Redux applications that provide functions to Redux o
 ## Redux Saga vs Redux Thunk
 
 Redux Thunk can never act in response to an action. Redux Saga, on the other hand, subscribes to the store and can trigger a saga to run or continue when a certain action is dispatched. 
+
+
+
+```text
+redux-saga/effects
+
+saga has own listener
+```
 
 ## Component vs Container in React Redux
 
