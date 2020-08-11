@@ -86,6 +86,9 @@ function createBase(baseNumber) {
   }
 }
 
+Or:
+var createBase = (b) => (N) => (N + b);
+
 var addSix = createBase(6);
 addSix(10);
 addSix(21);
@@ -93,7 +96,7 @@ addSix(21);
 
 
 
-How would you use a closure to create a private counter?Answer
+How would you use a closure to create a private counter?
 
 You can create a function within an outer function \(a closure\) that allows you to update a [private variable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Emulating_private_methods_with_closures) but the variable wouldn't be accessible from outside the function without the use of a helper function.
 
