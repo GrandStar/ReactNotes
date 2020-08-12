@@ -6,7 +6,7 @@ Because data can cause elements to re-render we should keep data as low down in 
 
 There will be many cases in which the data that you use in one component in the tree is needed in a _sibling_ component.
 
-![](../.gitbook/assets/image%20%2860%29.png)
+![](../.gitbook/assets/image%20%2862%29.png)
 
 For this example let's take the `Line` component.
 
