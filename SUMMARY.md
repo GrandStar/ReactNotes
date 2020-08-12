@@ -4,6 +4,7 @@
 * [HTML](html.md)
 * [WEB Network HTTP etc](web-network-http.md)
 * [CSS](css/README.md)
+  * [GPU Animation](css/gpu-animation.md)
   * [transform-function](css/transform-function.md)
   * [LVHA Pseudo-classes](css/lvha-pseudo-classes.md)
   * [Selector](css/selector.md)

@@ -60,11 +60,11 @@ All HTML elements can be considered as boxes. In CSS, the term box model is used
 
 ### Absolute Lengths
 
-![](../.gitbook/assets/image%20%2862%29.png)
+![](../.gitbook/assets/image%20%2863%29.png)
 
 ### Relative Lengths
 
-![](../.gitbook/assets/image%20%2866%29.png)
+![](../.gitbook/assets/image%20%2869%29.png)
 
 ## Display
 

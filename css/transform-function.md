@@ -4,7 +4,7 @@ Matrix\(\)
 
 ![](../.gitbook/assets/image%20%2860%29.png)
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2867%29.png)
 
 ```text
 matrix(a, b, c, d, tx, ty)
@@ -34,7 +34,7 @@ The fixed point that the element rotates around — mentioned above — is also 
 
 #### Scaling \(resizing\) <a id="Scaling_resizing"></a>
 
-![](../.gitbook/assets/image%20%2864%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 
 [`scale()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale)Scales an element up or down on the 2D plane.[`scale3d()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d)Scales an element up or down in 3D space.[`scaleX()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaleX)Scales an element up or down horizontally.[`scaleY()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaleY)Scales an element up or down vertically.[`scaleZ()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaleZ)Scales an element up or down along the z-axis.
 
@@ -48,7 +48,7 @@ The fixed point that the element rotates around — mentioned above — is also 
 
 The **`translate()`** [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) function repositions an element in the horizontal and/or vertical directions. Its result is a [`<transform-function>`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function) data type.
 
-![](../.gitbook/assets/image%20%2870%29.png)
+![](../.gitbook/assets/image%20%2875%29.png)
 
 [`translate3d()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d)Translates an element in 3D space.[`translateX()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX)Translates an element horizontally.[`translateY()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateY)Translates an element vertically.[`translateZ()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateZ)Translates an element along the z-axis.
 

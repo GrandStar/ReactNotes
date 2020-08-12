@@ -110,6 +110,38 @@ An example of a cross-origin request: The frontend JavaScript code for a web app
 
 
 
+## **Internet Protocol version 6** \(**IPv6**\) 
+
+![](.gitbook/assets/image%20%2874%29.png)
+
+Pv6 uses a 128-bit address, theoretically allowing 2^128 addresses.
+
+The two protocols are not designed to be [interoperable](https://en.wikipedia.org/wiki/Interoperable)
+
+![Glossary of terms used for IPv6 addresses.](.gitbook/assets/image%20%2872%29.png)
+
+![](.gitbook/assets/image%20%2868%29.png)
+
+### Comparison with IPv4:
+
+#### Larger address space
+
+#### Multicasting
+
+![](.gitbook/assets/image%20%2862%29.png)
+
+[Multicasting](https://en.wikipedia.org/wiki/Multicast), the transmission of a packet to multiple destinations in a single send operation, is part of the base specification in IPv6.
+
+#### Stateless address autoconfiguration \(SLAAC\) SLAAC
+
+IPv6 hosts configure themselves automatically. Every interface has a self-generated link-local address and, when connected to a network, conflict resolution is performed and routers provide network prefixes via router advertisements.
+
+#### IPsec
+
+The IPsec Authentication Header \(AH\) and the Encapsulating Security Payload header \(ESP\) are implemented as IPv6 extension headers
+
+
+
 ## HTTP/2 <a id="firstHeading"></a>
 
 #### Goals:
