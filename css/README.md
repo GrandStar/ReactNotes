@@ -60,11 +60,11 @@ All HTML elements can be considered as boxes. In CSS, the term box model is used
 
 ### Absolute Lengths
 
-![](../.gitbook/assets/image%20%2861%29.png)
+![](../.gitbook/assets/image%20%2862%29.png)
 
 ### Relative Lengths
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 
 ## Display
 
@@ -114,6 +114,58 @@ inline style &gt; ID selector &gt; class, attribute and pseudo-class selector &g
 ## Media Query 
 
 It uses the @media rule to include a block of CSS properties only if a certain condition is true. In order to implement Responsive Design to adapt different screen. 
+
+### CSS Syntax
+
+@media not\|only mediatype and \(mediafeature and\|or\|not mediafeature\) {  
+  CSS-Code;  
+}
+
+meaning of the **not**, **only** and **and** keywords:
+
+**not:** The not keyword reverts the meaning of an entire media query.
+
+**only:** The only keyword prevents older browsers that do not support media queries with media features from applying the specified styles. **It has no effect on modern browsers.**
+
+**and:** The and keyword combines a media feature with a media type or other media features.
+
+They are all optional. However, if you use **not** or **only**, you must also specify a media type.
+
+
+
+### Media Types
+
+| Value | Description |
+| :--- | :--- |
+| all | Default. Used for all media type devices |
+| print | Used for printers |
+| screen | Used for computer screens, tablets, smart-phones etc. |
+| speech | Used for screenreaders that "reads" the page out loud |
+
+
+
+## overflow Property
+
+The `overflow` property specifies what should happen if content overflows an element's box.
+
+This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.
+
+
+
+### CSS Syntax
+
+overflow: visible\|hidden\|scroll\|auto\|initial\|inherit;
+
+### Property Values
+
+| Value | Description |
+| :--- | :--- |
+| visible | The overflow is not clipped. It renders outside the element's box. This is default |
+| hidden | The overflow is clipped, and the rest of the content will be invisible |
+| scroll | The overflow is clipped, but a scroll-bar is added to see the rest of the content |
+| auto | If overflow is clipped, a scroll-bar should be added to see the rest of the content |
+| initial | Sets this property to its default value. [Read about _initial_](https://www.w3schools.com/cssref/css_initial.asp) |
+| inherit | Inherits this property from its parent element. [Read about _inherit_](https://www.w3schools.com/cssref/css_inherit.asp) |
 
 ## CSS Grid vs Flex-box
 
@@ -177,4 +229,14 @@ Rem is a new feature for CSS3, which stands for root em. It's equal to the compu
 
 
 SASS/ LESS
+
+
+
+unused style resources not downloaded by the browser
+
+```text
+#i-am-useless {
+```
+
+
 
