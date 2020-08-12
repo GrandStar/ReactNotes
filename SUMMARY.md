@@ -2,7 +2,7 @@
 
 * [Study Book](README.md)
 * [HTML](html.md)
-* [WEB Network HTTP](web-network-http.md)
+* [WEB Network HTTP etc](web-network-http.md)
 * [CSS](css/README.md)
   * [transform-function](css/transform-function.md)
   * [LVHA Pseudo-classes](css/lvha-pseudo-classes.md)

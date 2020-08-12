@@ -21,9 +21,37 @@ function flatten(arr) {
 // es6
 const flatten = arr =>
   arr.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []);
+  
 ```
 
 
+
+```text
+var foo = 1;
+function bar() {
+	foo = 10;
+	return;
+	function foo() {}
+}
+bar();
+alert(foo);
+```
+
+```text
+function bar() {
+    return foo;
+    foo = 10;
+    function foo() {}
+    var foo = 11;
+}
+alert(typeof bar());
+```
+
+```text
+function foo(){}
+delete foo.length;
+alert(typeof foo.length);
+```
 
 closure:
 

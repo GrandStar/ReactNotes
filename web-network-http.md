@@ -2,7 +2,7 @@
 description: 'https://developer.mozilla.org/en-US/docs/Web'
 ---
 
-# WEB Network HTTP
+# WEB Network HTTP etc
 
 ## OAuth, OpenID Connect, and SAML
 
@@ -173,5 +173,15 @@ Websocket
 
 {% embed url="https://www.ruanyifeng.com/blog/2017/05/websocket.html" %}
 
+##  microservice
 
+A microservice architecture involves many services that are each responsible for a small amount of functionality.
+
+These services must communicate with each other over a network; since such communication would not be necessary in other architectures \(e.g. monolithic\), lower network latency is **not** a claimed benefit of microservice architecture.
+
+Since the services are mostly self-contained, there’s less coupling and improved modularity between the various services.
+
+By distributing functionality among multiple services, failure in part of the system does not necessarily result in failure of the entire system; this graceful degradation can lead to improved resiliency against failures. Furthermore, a microservice architecture makes it easier to introduce redundancy for critical components.
+
+Finally, since it’s easier for developers to work on a particular service without affecting the rest of the system, it’s also easier to achieve continuous delivery.
 
