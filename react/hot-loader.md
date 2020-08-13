@@ -10,9 +10,9 @@
 
 Webpack Hot-Module-Replacement  HMR
 
-![](../.gitbook/assets/image%20%2870%29.png)
+![](../.gitbook/assets/image%20%2876%29.png)
 
-![](../.gitbook/assets/image%20%2873%29.png)
+![](../.gitbook/assets/image%20%2882%29.png)
 
 For react
 

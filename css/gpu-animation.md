@@ -2,7 +2,7 @@
 
 
 
-![CSS animation using the transform property looks much smoother than one using the left and top properties. ](../.gitbook/assets/image%20%2864%29.png)
+![CSS animation using the transform property looks much smoother than one using the left and top properties. ](../.gitbook/assets/image%20%2868%29.png)
 
 Use `transform: translateZ(0)` or `will-change: transform`
 

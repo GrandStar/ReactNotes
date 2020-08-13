@@ -14,6 +14,43 @@ Syntax for creating an `XMLHttpRequest`
 
 var xhttp = new XMLHttpRequest\(\);
 
+request
+
+```text
+$.ajax({
+  url: "http://localhost:8080/login",
+  type: 'GET',
+  // Fetch the stored token from localStorage and set in the header
+  headers: {"Authorization": localStorage.getItem('token')}
+});
+
+$.ajax({
+  url: "http://localhost:8080/login",
+  type: "POST",
+  headers: { Authorization: $`Bearer ${localStorage.getItem("token")}` },
+  data: formData,
+  error: function(err) {
+    switch (err.status) {
+      case "400":
+        // bad request
+        break;
+      case "401":
+        // unauthorized
+        break;
+      case "403":
+        // forbidden
+        break;
+      default:
+        //Something bad happened
+        break;
+    }
+  },
+  success: function(data) {
+    console.log("Success!");
+  }
+});
+```
+
 
 
 ### XMLHttpRequest Object Methods

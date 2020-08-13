@@ -22,7 +22,7 @@ The `:root` selector matches the document's root element. ****In HTML, the root 
 
 ### inherits from its ancestor  &lt; Directly targeted elements .    all the time
 
-![](../.gitbook/assets/image%20%2861%29.png)
+![](../.gitbook/assets/image%20%2862%29.png)
 
 | `<span style="color:red;">` | `#text{color:red;}` | `.text{color:red;} [type="text"]{color:red}` | `span{color:red;}` |
 | :--- | :--- | :--- | :--- |
@@ -44,5 +44,13 @@ The `:root` selector matches the document's root element. ****In HTML, the root 
 * !important &gt; 内联 &gt; ID &gt; Class\|属性\|伪类 Pseudo-classes \| Pseudo-elements&gt; 元素选择器
 * :link、:visited、:hover、:active按照LVHA（LoVe HAte）顺序定义
 
-\*\*\*\*
+## Specificity Rules
+
+* Equal specificity: the latest rule counts
+* ID selectors have a higher specificity than attribute selectors
+* Contextual selectors are more specific than a single element selector
+* A class selector beats any number of element selectors
+* The universal selector and inherited values have a specificity of 0
+
+inline style &gt; ID selector &gt; class, attribute and pseudo-class selector &gt; tag and pseudo-element selector
 

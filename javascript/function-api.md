@@ -101,6 +101,8 @@ var removedItem = fruits.splice(pos, 1);
 
 [`Array.prototype.join()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/join)   `concat and return a new String`
 
+join\(" + "\) use " + " to concat
+
 [`Array.prototype.slice()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)  `get some return a new array`
 
 ```text
@@ -236,6 +238,8 @@ str.split([separator[, limit]])
 [`String.prototype.toLowerCase()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)Returns the calling string value converted to lower case.
 
 [`String.prototype.toUpperCase()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)Returns the calling string value converted to uppercase.
+
+str.split\("dog"\).join\("cat"\);
 
 ###  [`String.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toString)Returns a string representing the specified object. Overrides the [`Object.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) method.
 

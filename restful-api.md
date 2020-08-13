@@ -81,9 +81,7 @@ Continuous Integration is a development practice that requires developers to int
 
 A cross-domain solution is a means of information assurance that provides the ability to manually or automatically access or transfer information between two or more differing security domains. 
 
-## Cross-Origin Resource Sharing \(CORS\)
 
-Cross-Origin Resource Sharing \(CORS\) is a mechanism that uses additional HTTP headers to tell a browser to let a web application running at one origin \(domain\) have permission to access selected resources from a server at a different origin. A web application executes a cross-origin HTTP request when it requests a resource that has a different origin \(domain, protocol, and port\) than its own origin. 
 
 ## 5 ways to reduce the page loading speed
 

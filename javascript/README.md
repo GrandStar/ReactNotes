@@ -1,10 +1,8 @@
+---
+description: 'JavaScript is a high-level, interpreted programming language.'
+---
+
 # Javascript
-
-##  JavaScript
-
-JavaScript is a high-level, interpreted programming language.
-
-## 
 
 ## How JavaScript work
 
@@ -25,6 +23,8 @@ promise iis micro
 The shallow comparison check means that JavaScript only checks that the value's object IDs are the same, not their contents are the same. The ID here means the memory address for where JavaScript stores the information for that particular object.
 
 ## Hoisting
+
+variable can be used before it has been declared
 
 Hoisting is a term used to explain the behavior of variable declarations in your code. Variables declared or initialized with the `var` keyword will have their declaration "moved" up to the top of the current scope. 
 
@@ -246,7 +246,7 @@ const obj = new myObject("hello");
 
 ![](../.gitbook/assets/image%20%2822%29.png)
 
-* Promise represents the eventual completion of an async operation
+* * Promise represents the eventual completion of an async operation
 * It must be in one of these states
   * pending
     * initial state, not fulfilled or rejected
@@ -258,6 +258,32 @@ const obj = new myObject("hello");
 * promise.all 
   * returns a single promise that resolves when all of the promises in the argument have resolved or when the utterable argument contains no promises
 * create Promise example
+
+Promise use observable module.
+
+class EventEmitter {
+
+constructor \(\) { this.eventChannel = {};}
+
+on \(event, callback\) { this.eventChannel\[event\] ? this.eventChannel\[event\].push\(callback\) : this.eventChannel\[event\] = \[callback\] }
+
+emit \(event, ...args\) { this.eventChannel\[event\] && this.eventChannel\[event\].forEach\(callback =&gt; callback\(...args\)\) }
+
+remove \(event\) { if \(this.eventChannel\[event\]\) { delete this.eventChannel\[event\] } }
+
+once \(event, callback\) { this.on\(event, \(...args\) =&gt; { callback\(...args\); this.remove\(event\) }\) }
+
+}
+
+![](../.gitbook/assets/image%20%2880%29.png)
+
+class Observer { constructor \(\) { this.observerList = \[\]; }
+
+subscribe \(observer\) { this.observerList.push\(observer\) }
+
+notifyAll \(value\) { this.observerList.forEach\(observe =&gt; observe\(value\)\) } }
+
+
 
 [`Promise.all(iterable)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)Wait for **all promises** to be resolved, or for any to be rejected. If the returned promise resolves, it is resolved with an aggregating array of the values from the resolved promises in the same order as defined in the iterable of multiple promises. I
 
@@ -661,6 +687,16 @@ a; // "42"
 b; // 42 -- the number!
 ```
 
+## Select sequence
+
+ &lt;div&gt;&lt;button /&gt;&lt;/div&gt;
+
+$\('div'\).on\('click', function\(\){ alert\('div'\) }\) 
+
+$\('button'\).on\('click', function\(\){ alert\('button'\) }\)
+
+select button first
+
 ## KOA.js  
 
 {% embed url="https://juejin.im/post/6844903888458366989" %}
@@ -694,4 +730,38 @@ b; // 42 -- the number!
     return handleRequest;
   }
 ```
+
+## JavaScript Where To
+
+### The &lt;script&gt; Tag
+
+### JavaScript in &lt;head&gt; or &lt;body&gt;
+
+You can place any number of scripts in an HTML document.
+
+Scripts can be placed in the `<body>`, or in the `<head>` section of an HTML page, or in both.
+
+### External JavaScript
+
+Scripts can also be placed in external files:
+
+You can place an external script reference in `<head>` or `<body>` as you like.
+
+The script will behave as if it was located exactly where the `<script>` tag is located.
+
+### External JavaScript Advantages
+
+Placing scripts in external files has some advantages:
+
+* It separates HTML and code
+* It makes HTML and JavaScript easier to read and maintain
+* Cached JavaScript files can speed up page loads
+
+To add several script files to one page  - use several script tags:
+
+&lt;script src="myScript1.js"&gt;&lt;/script&gt;
+
+### External References
+
+script src="[https://www.w3schools.com/js/myScript1.js"&gt;](https://www.w3schools.com/js/myScript1.js">)&lt;/script
 

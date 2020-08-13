@@ -4,7 +4,7 @@ description: Study Book
 
 # Study Book
 
-React node js full stack study note.
+full stack study note.
 
 HTML CSS JAVASCRIPT REACT REDUX NODEJS EXPRESS RESTFUL API MONGODB The conception and how to write good code.
 
