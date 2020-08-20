@@ -4,6 +4,12 @@
 
 HyperText Markup Language \(HTML\) is the standard markup language for creating web pages and web applications.
 
+## **HTML5**
+
+Its goals were to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices such as web browsers, parsers, etc., without XHTML's rigidity; and to remain backward-compatible with older software.
+
+HTML5 includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents and introduces markup and application programming interfaces \(APIs\) for complex web applications
+
 ## HTML5 New Features
 
 * Doctype
