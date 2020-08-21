@@ -97,3 +97,17 @@ xhttp.send\(\);
 
 xhttp.open\("GET", "demo\_get2.asp?fname=Henry&lname=Ford", true\); xhttp.send\(\);
 
+
+
+
+
+```text
+fetch('http://example.com/movies.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(myJson);
+  });
+```
+

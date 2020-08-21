@@ -8,6 +8,7 @@
   * [HTTP/2 & SPDY](web-network-http/http-2-and-spdy.md)
   * [JSON, XML, other format](web-network-http/json-xml-other-format.md)
 * [Javascript](javascript/README.md)
+  * [make API call](javascript/make-api-call.md)
   * [Web API](javascript/web-api.md)
   * [Common JS](javascript/common-js.md)
   * [AJAX](javascript/ajax.md)

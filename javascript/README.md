@@ -384,24 +384,7 @@ Promise The asynchronism here is all contained in the promise chain. `myFunction
 
 
 
-## How to make HTTP request
-
-* AJAX
-* jQuery 
-* Fetch
-* Axios
-
-
-
-## Fetch 
-
-A Fetch API provides a fetch method defined on a window object, which you can use to perform requests and sent it to the server. This method returns a Promise that you can use to retrieve the response of the request.
-
-## Fetching data from the server
-
-![A basic web app data flow architecture](https://mdn.mozillademos.org/files/6479/web-app-architecture@2x.png)
-
-##  
+## 
 
 ## Null process
 
