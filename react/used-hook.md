@@ -45,7 +45,7 @@ export default App;
 
 ## useEffect & useRef & useContext
 
-useEffect:  `componentDidMount   componentDidUpdate`  `componentWillUnmount`
+useEffect:  `componentDidMount ·  componentDidUpdate`  `componentWillUnmount`
 
 ```jsx
 import React, { useEffect, useRef, useContext } from 'react';
