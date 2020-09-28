@@ -23,6 +23,7 @@
   * [New Features](react/new-features.md)
   * [Hook](react/used-hook.md)
   * [Simple code](react/simple-code.md)
+  * [Performance Improvement](react/performance-improvement.md)
   * [Life Cycle](react/life-cycle.md)
 * [CSS](css/README.md)
   * [Horizontal & Vertical Align](css/horizontal-and-vertical-align.md)
