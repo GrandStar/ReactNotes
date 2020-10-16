@@ -26,7 +26,7 @@ const App = props => {
             person: [
                 {name: "Harry Lu", age: 25}
             ]
-        });
+        });·
     };
     
     return (

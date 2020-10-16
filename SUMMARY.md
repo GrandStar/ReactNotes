@@ -17,6 +17,7 @@
   * [special function](javascript/special-function.md)
   * [function API](javascript/function-api.md)
 * [React](react/README.md)
+  * [Example](react/example.md)
   * [Lifting functions/ state up](react/lifting-functions-state-up.md)
   * [Hot Loader](react/hot-loader.md)
   * [Testing](react/testing.md)
