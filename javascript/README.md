@@ -4,6 +4,48 @@ description: 'JavaScript is a high-level, interpreted programming language.'
 
 # Javascript
 
+## Basic
+
+basic data type: undefined、null、boolean、number、string、symbol
+
+object type: object array function
+
+```text
+typeof undefined // 'undefined'
+typeof NaN   //number
+typeof null  //object
+typeof [] // 'object'
+Array.isArray([]) //true
+typeof {} // 'object'
+typeof console.log // 'function'
+Object.prototype.toString.call(obj) // best way
+p1 = new Person()
+p1 instanceof Person // true
+Object.assign() //shaddow copy
+JSON.parse(JSON.stringify(obj)) // deep copy
+
+Deep copy:
+function cloneDeep(source) {
+    if (!isObject(source)) return source; // 非对象返回自身
+    var target = Array.isArray(source) ? [] : {};
+    for (var key in source) {
+      if (source.hasOwnProperty(i)) {
+        if (isObject(source[key])) {
+          target[key] = cloneDeep(source[key]); // 注意这里
+        } else {
+          target[key] = source[key];
+        }}}
+    return target;
+  }
+  function isObject(obj) {
+    return typeof obj === 'object' && obj != null;
+  }}
+```
+
+## Shallow Comparison Check
+
+The shallow comparison check means that JavaScript only checks that the value's object IDs are the same, not their contents are the same. The ID here means the memory address for where JavaScript stores the information for that particular object.
+
 ## How JavaScript work
 
 ![](../.gitbook/assets/image%20%2818%29.png)
@@ -17,10 +59,6 @@ VIP插队： micro-task，   normal: macro-task
 promise iis micro
 
 ![](../.gitbook/assets/image%20%2840%29.png)
-
-## Shallow Comparison Check
-
-The shallow comparison check means that JavaScript only checks that the value's object IDs are the same, not their contents are the same. The ID here means the memory address for where JavaScript stores the information for that particular object.
 
 ## Hoisting
 
