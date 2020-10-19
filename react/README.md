@@ -168,7 +168,7 @@ If your function component renders the same result given the same props, you can
 
 By default it will only shallowly compare complex objects in the props object. If you want control over the comparison, you can also provide a custom comparison function as the second argument. 
 
-This method only exists as a performance optimization. 
+This method only exists as a better performance. 
 
 ## React.Fragment
 
