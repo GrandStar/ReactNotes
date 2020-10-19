@@ -16,19 +16,25 @@ For example, the Geolocation API can return the coordinates of where the browser
 
 **Example**
 
-Get the latitude and longitude of the user's position:var x = document.getElementById\("demo"\);  
-  
-function getLocation\(\) {  
-  if \(navigator.geolocation\) {  
-    navigator.geolocation.getCurrentPosition\(showPosition\);  
-  } else {  
-    x.innerHTML = "Geolocation is not supported by this browser.";  
-  }  
-}  
-  
-function showPosition\(position\) {  
-  x.innerHTML = "Latitude: " + position.coords.latitude +  
-  "&lt;br&gt;Longitude: " + position.coords.longitude;
+Get the latitude and longitude of the user's position
+
+```javascript
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+```
 
 ## Web History API
 
@@ -38,36 +44,33 @@ The back\(\) method loads the previous URL in the windows.history list.
 
 It is the same as clicking the "back arrow" in your browser.
 
-#### Example
-
-&lt;button onclick="myFunction\(\)"&gt;Go Back&lt;/button&gt;  
-  
-&lt;script&gt;  
-function myFunction\(\) {  
-  window.history.back\(\);  
-}  
-&lt;/script&gt;
+```javascript
+<button onclick="myFunction()">Go Back</button>
+<script>
+function myFunction() {
+  window.history.back();
+}
+</script>
+```
 
 ### The History go\(\) Method
 
 The go\(\) method loads a specific URL from the history list:
 
-#### Example
+```javascript
+<button onclick="myFunction()">Go Back 2 Pages</button>
 
-&lt;button onclick="myFunction\(\)"&gt;Go Back 2 Pages&lt;/button&gt;  
-  
-&lt;script&gt;  
-function myFunction\(\) {  
-  window.history.go\(-2\);  
-}  
-&lt;/script&gt;
+<script>
+function myFunction() {
+  window.history.go(-2);
+}
+</script>
+```
 
 | [back\(\)](https://www.w3schools.com/jsref/met_his_back.asp) | Loads the previous URL in the history list |
 | :--- | :--- |
 | [forward\(\)](https://www.w3schools.com/jsref/met_his_forward.asp) | Loads the next URL in the history list |
 | [go\(\)](https://www.w3schools.com/jsref/met_his_go.asp) | Loads a specific URL from the history list |
-
-
 
 ## Web Storage API
 
@@ -163,25 +166,24 @@ The `getCurrentPosition()` method is used to return the user's position.
 
 The example below returns the latitude and longitude of the user's position:
 
-#### Example
+```javascript
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
 
-&lt;script&gt;  
-var x = document.getElementById\("demo"\);  
-function getLocation\(\) {  
-  if \(navigator.geolocation\) {  
-    navigator.geolocation.getCurrentPosition\(showPosition\);  
-  } else {  
-    x.innerHTML = "Geolocation is not supported by this browser.";  
-  }  
-}  
-  
-function showPosition\(position\) {  
-  x.innerHTML = "Latitude: " + position.coords.latitude +  
-  "&lt;br&gt;Longitude: " + position.coords.longitude;  
-}  
-&lt;/script&gt;
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
 
-
+```
 
 ### Displaying the Result in a Map
 
@@ -191,16 +193,16 @@ In the example below, the returned latitude and longitude is used to show the lo
 
 #### Example
 
-function showPosition\(position\) {  
-  var latlon = position.coords.latitude + "," + position.coords.longitude;  
-  
-  var img\_url = "https://maps.googleapis.com/maps/api/staticmap?center=  
-  "+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR\_KEY";  
-  
-  document.getElementById\("mapholder"\).innerHTML = "&lt;img src='"+img\_url+"'&gt;";  
+```javascript
+function showPosition(position) {
+  var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+  var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
+  "+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
+
+  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 }
-
-
+```
 
 ### Location-specific Information
 

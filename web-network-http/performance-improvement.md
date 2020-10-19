@@ -16,7 +16,7 @@ Use google WebP, SVG, or jpg/png. **Indexed Color. Direct Color. Bitmap**
 
 ####  HTTP2 next chapter
 
-![](../.gitbook/assets/image%20%2897%29.png)
+![](../.gitbook/assets/image%20%2898%29.png)
 
 #### Use cache
 

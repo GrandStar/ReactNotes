@@ -15,7 +15,7 @@
   * [Web API](javascript/web-api.md)
   * [Common JS](javascript/common-js.md)
   * [AJAX](javascript/ajax.md)
-  * [Event delegation](javascript/event-delegation.md)
+  * [Event DOM and delegation](javascript/event-delegation.md)
   * [ES6 new features](javascript/es6-new-features.md)
   * [special function](javascript/special-function.md)
   * [function API](javascript/function-api.md)
