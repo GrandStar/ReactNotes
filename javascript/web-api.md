@@ -216,5 +216,56 @@ Geolocation is also very useful for location-specific information, like:
 
 
 
+## DOM API
 
+### Document:
+
+#### document.body
+
+represents the [`<body>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body) or [`<frameset>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset) node of the current document, or `null` if no such element exists.
+
+```text
+alert(document.body.id); // "oldBodyElement"
+
+var aNewBodyElement = document.createElement("body");
+
+aNewBodyElement.id = "newBodyElement";
+document.body = aNewBodyElement;
+alert(document.body.id); // "newBodyElement"
+```
+
+#### Document.font
+
+ returns the [`FontFaceSet`](https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet) interface of the document.
+
+```text
+document.fonts.ready.then(function() {
+  // Any operation that needs to be done only after all the fonts
+  // have finished loading can go here.
+});
+```
+
+#### Document.domain
+
+ **`domain`** property of the [`Document`](https://developer.mozilla.org/en-US/docs/Web/API/Document) interface gets/sets the domain portion of the [origin](https://developer.mozilla.org/en-US/docs/Glossary/origin) of the current document, as used by the [same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy).
+
+#### Document.event
+
+[`Event.cancelBubble`](https://developer.mozilla.org/en-US/docs/Web/API/Event/cancelBubble)A historical alias to [`Event.stopPropagation()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation). Setting its value to `true` before returning from an event handler prevents propagation of the event.
+
+[`Event.composedPath()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath)
+
+Returns the event’s path \(objects on which listeners will be invoked\). This does not include nodes in shadow trees if the shadow root was created with its [`ShadowRoot.mode`](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/mode) closed.
+
+[`Event.preventDefault()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
+
+Cancels the event \(if it is cancelable\).
+
+[`Event.stopImmediatePropagation()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopImmediatePropagation)
+
+For this particular event, prevent all other listeners from being called. This includes listeners attached to the same element as well as those attached to elements that will be traversed later \(during the capture phase, for instance\).
+
+[`Event.stopPropagation()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
+
+Stops the propagation of events further along in the DOM.
 
